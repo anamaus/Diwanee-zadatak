@@ -54,8 +54,9 @@ body{
     color: #888;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: normal;
-
+font-size: 16px;
     letter-spacing: 1px;
+    line-height: 28px;
 }
 /*
     =========================
@@ -82,6 +83,17 @@ body{
     float: left;
     vertical-align: top;
 }
+.container-padding{
+    padding: 0 200px ;
+}
+section{
+    padding: 100px 0;
+}
+section:first-of-type{
+    padding: 0;
+}
+
+
 /*
   ========================================
   Typography
@@ -118,6 +130,7 @@ h6{
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
+
 }
 .text-center {
     text-align: center;
@@ -174,10 +187,10 @@ h6{
     background: #C41230;
     width: 60px;
     height: 3px;
-    margin: 30px auto;
+    margin: 50px auto;
 }
 .dash-muted {
-    background: #888;
+    background: #cacaca;
     width: 50px;
     height: 2px;
     margin: 30px auto;
@@ -196,39 +209,92 @@ h6{
   Navigation
   ========================================
 */
-.logo{
-    float: left;
+/*.logo{*/
+    /*float: left;*/
     /*padding: 40px 0 22px 0;*/
-}
+    /*display: inline-block;*/
+
+/*}*/
 
 .nav {
-    text-align: right;
+    position: relative;
+    padding: 20px 0;
+
 }
 .nav ul {
-    text-transform: uppercase;
+width: 100%;
+    height: 80px;
+    margin-top: -20px;
+    text-align: right;
 }
 .nav li{
-    display: inline-block;
-    margin: 0 10px;
-    /*vertical-align: top;*/
-    height: 80px;
+    display: inline;
+
+
 
 }
 .nav a {
+    display: inline-block;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 13px;
     color: #333333;
     letter-spacing: 4px;
+    text-transform: uppercase;margin: 0 10px;
+    text-align: center;
+    transition: 0.3s;
+
 
 }
 .nav a:hover {
-
+    color: red;
 }
 
-/*header*/
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+    ul.topnav li {display: none;}
+    ul.topnav li.icon {
+        float: right;
+        display: inline-block;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+    ul.topnav.responsive {position: relative;}
+    ul.topnav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    ul.topnav.responsive li {
+        float: none;
+        display: inline;
+    }
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+}
+/*
+  ========================================
+  Header
+  ========================================
+*/
+
+
 header{
     background-image: url("../images/diwanee-cover.png");
-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 100vh;
+    max-width: 100%;
 }
 
 header h1, header p {
@@ -242,14 +308,54 @@ header p{
     line-height: 40px;
 
 }
-/* Services */
+#main-text {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*
+  ========================================
+  Services
+  ========================================
+*/
+
 #services h4{
     letter-spacing: 4px;
     line-height: 30px;
 
 }
+.service-box {
+    padding: 80px 50px;
+    background-color:#fbfbfb;
 
-/*Jobs*/
+}
+.service-box1{
+    background-image: url("../images/triangle-white.png") ;
+    background-repeat: no-repeat;
+    background-position:-90% center;
+}
+.service-box2{
+    background-color: #ededed;
+}
+.service-box3{
+    background-image: url("../images/square-white.png");
+    background-repeat: no-repeat;
+
+    background-position: -30% -20%;
+}
+.service-box img {
+    margin-bottom: 30px;
+    max-height: 90px;
+
+}
+/*
+  ========================================
+  Jobs
+  ========================================
+*/
+
 
 #jobs p {
     font-family: 'Source Sans Pro', sans-serif;
@@ -266,9 +372,37 @@ header p{
     line-height: 34px;
 
 }
+/*
+  ========================================
+  About
+  ========================================
+*/
+#about {
+    background-color: #fbfbfb;
+    padding: 100px 0;
+}
+
+/*
+  ========================================
+ Contact
+  ========================================
+*/
+
+#contact img:first-of-type{
+    margin-right: 5px;
+}
+#contact img:last-of-type{
+    margin-left: 5px;
+}
 
 
-/*footer*/
+
+/*
+  ========================================
+ Footer
+  ========================================
+*/
+
 footer {
     background-color: #333;
 
@@ -338,3 +472,7 @@ footer {
 #links .fa {
     font-size: 22px;
 }
+
+
+
+

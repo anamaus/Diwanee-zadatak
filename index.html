@@ -3,36 +3,36 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Diwanee Serbia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<header id="top">
+<header>
     <nav class="container nav group">
         <a class="logo" href="#"><img src="images/diwanee-logo.png"></a>
-        <ul>
-            <li><a href="#about">o nama</a></li>
-            <!--
-                        -->
-            <li><a href="#jobs">poslovi</a></li>
-            <!--
-                        -->
-            <li><a href="#contact">kontakt</a></li>
+        <ul class="topnav">
+            <li><a href="#about">o nama</a></li><!--
+            --><li><a href="#jobs">poslovi</a></li><!--
+            --><li><a href="#contact">kontakt</a></li>
+            <li class="icon">
+                <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+            </li>
         </ul>
     </nav>
     <div id="main-text" class="container text-center">
         <h1>Diwanee serbia</h1>
 
         <div class="dash"></div>
-        <p>Digital Media Agency always looking for motivated, multi-talented, and organized people to join our diverse
+        <p class="container-padding ">Digital Media Agency always looking for motivated, multi-talented, and organized people to join our diverse
             team.</p>
     </div>
 
 </header>
 
-<section id="services" class="text-center">
-    <div class="col-1-3">
+<section id="services" class="text-center ">
+    <div class="col-1-3 service-box service-box1">
         <img src="images/triangle.png">
         <h4>Development</h4>
 
@@ -40,7 +40,7 @@
         <p>Front-end developers play a critical role in most projects at Code and Theory.They are actively involved
             throughout the project lifecycle, often times starting with rapid prototypes early in the design phase.</p>
     </div>
-    <div class="col-1-3">
+    <div class="col-1-3 service-box service-box2">
         <img src="images/oval.png">
         <h4>Web & UI design</h4>
 
@@ -48,7 +48,7 @@
         <p>Front-end developers play a critical role in most projects at Code and Theory.They are actively involved
             throughout the project lifecycle, often times starting with rapid prototypes early in the design phase.</p>
     </div>
-    <div class="col-1-3">
+    <div class="col-1-3 service-box service-box3">
         <img src="images/rectangle%20.png">
         <h4>work in team</h4>
 
@@ -58,14 +58,14 @@
     </div>
 </section>
 
-<section id="jobs" class="container">
-    <div class="text-center">
+<section id="jobs" class="container group">
+    <div class="text-center container-padding">
         <h6>Otvorene pozicije</h6>
 
         <h2>Poslovi</h2>
 
         <div class="dash"></div>
-        <p>We are always looking for motivated, multi-talented, and organized people to join our diverse
+        <p >We are always looking for motivated, multi-talented, and organized people to join our diverse
             team.</p>
     </div>
     <div class="job-offer">
@@ -88,7 +88,8 @@
     </div>
 </section>
 
-<section id="about" class="container text-center">
+<section id="about" class=" text-center">
+    <div class="container container-padding">
     <h6>DIWANEE BEOGRAD</h6>
 
     <h2>DIGITAL MEDIA COMPANY</h2>
@@ -103,6 +104,7 @@
     <p class="text-left">Radimo sa velikim brojem brendova radi povećanja angažovanja, a sve u digitalnom prostoru.
         Diwanee je partner i
         sa velikim regionalnim vlasnicima medija, kako bismo upravljali svojom digitalnom prisutnošću.</p>
+    </div>
 </section>
 
 <section class="container text-center" id="contact">
@@ -115,19 +117,15 @@
     <div>
         <div id="offices" class="container">
             <div class="col-1-3">
-
                 <h5><img src="images/place-pin-ico.png"> DUBAI</h5>
-
                 <ul>
                     <li><p>Office Park, Building Block A</p></li>
                     <li><p> Units A301-A302</p></li>
                     <li><p>Dubai Internet City</p></li>
                     <li><p>T: 971 4 - 434 7147</p></li>
                 </ul>
-
             </div>
             <div class="col-1-3">
-
                 <h5><img src="images/place-pin-ico.png"> BEIRUT</h5>
                 <ul>
                     <li><p>Dora, Seaside Road,</p></li>
@@ -135,7 +133,6 @@
                     <li><p> Mobile: 961 76 - 866 700</p></li>
                     <li><p>Fax: 961 1 - 244 846</p></li>
                 </ul>
-
             </div>
             <div class="col-1-3">
                 <h5><img src="images/place-pin-ico.png"> BELGRADE</h5>
@@ -143,9 +140,7 @@
                     <li><p>Resavska 33,</p></li>
                     <li><p> 11000 Beograd</p></li>
                     <li><p> Tel: +381 11 - 3340 117</p></li>
-
                 </ul>
-
             </div>
         </div>
         <div id="footer-copyright" class="group">
@@ -153,14 +148,11 @@
 
                 <div id="copyright">
                     <p>COPYRIGHT &copy; 2015 DIWANEE SERBIA ALL RIGHTS RESERVED</p>
-
-
                     <div id="links">
                         <ul>
                             <li><a href="https://www.linkedin.com/company/diwanee" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                             <li><a href="https://twitter.com/diwaneeserbia" target="_blank"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="http://corp.diwanee.com/" target="_blank">www.diwanee.com</a></li>
-
                         </ul>
                     </div>
                 </div>
@@ -168,5 +160,7 @@
         </div>
     </div>
 </footer>
+
+<script src="JS/custom.js"></script>
 </body>
 </html>
