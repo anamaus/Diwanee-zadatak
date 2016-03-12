@@ -328,6 +328,7 @@ ul.topnav li.icon {
         color: #888;
         line-height:20px;
         margin-left: 10px;
+        font-size:8px ;
     }
     ul.topnav.responsive .followus-link .social-links-right{
         text-align: right;
@@ -364,7 +365,7 @@ header{
     background-image: url("../images/diwanee-cover.png");
     background-size: cover;
     background-position: center center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -582,7 +583,6 @@ header p{
 
     font-size: 16px;
     margin-right: 20px;
-
 }
 
 
@@ -625,12 +625,14 @@ header p{
         font-size: 9px;
     }
     h6{
+        font-size: 9px;
         margin-bottom: 20px;
     }
-
-    header p,#services p, h6, #jobs p{
-        font-size: 9px;
+   #main-text p {
+        font-size: 18px;
+        line-height: 29px;
     }
+
     #jobs p {
         font-size: 11px;
         line-height: 18px;
@@ -642,8 +644,7 @@ header p{
     .job-offer ul li{
         font-size: 7px;
     }
-    .btn-alt {
-
+    .btn {
         font-size: 7px;
     }
     #offices ul li p {
@@ -683,24 +684,40 @@ header p{
 }
 /*
   ========================================
+  Misc small
+  ========================================
+*/
+@media screen and (max-width: 480px) {
+    .dash{
+        width: 40px;
+        height: 3px;
+        margin: 20px auto;
+    }
+    .dash-muted {
+        background: #cacaca;
+        width: 40px;
+        height: 2px;
+        margin: 30px auto;
+    }
+}
+
+/*
+  ========================================
   Jobs small
   ========================================
 */
 @media screen and (max-width: 480px) {
     .job-offer {
-        padding: 20px 0;
+        padding: 30px 0;
         background-color:#fbfbfb;
     }
     .sign-in-job-button {
         display: none;
-
     }
     .job-offer ul li{
-
         border:none;
         padding: 0;
         color: #C41230;
-
     }
     .job-offer-dark {
         background-color: #fff;
@@ -711,8 +728,6 @@ header p{
 
     #button-load-more{
         margin-top: 50px;
-
-
     }
     #button-load-more .btn {
         width:70%;
@@ -720,24 +735,14 @@ header p{
 
 
 }
+
+
 /*
   ========================================
-  Misc small
+  Services small
   ========================================
 */
 @media screen and (max-width: 480px) {
-    .dash{
-
-        width: 40px;
-        height: 3px;
-        margin: 20px auto;
-    }
-    .dash-muted {
-        background: #cacaca;
-        width: 50px;
-        height: 2px;
-        margin: 30px auto;
-    }
     .service-box1, .service-box3 {
         background-image: none;
     }
@@ -766,7 +771,6 @@ header p{
     #offices ul li {
         line-height: 18px;
         text-align: center;
-
     }
 
     #offices img {
@@ -775,7 +779,7 @@ header p{
 
     .primary-footer{
         background-color: #333;
-        padding: 0px;
+        padding: 0;
     }
     #links {
         float: none;
