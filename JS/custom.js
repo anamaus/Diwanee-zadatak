@@ -4,33 +4,13 @@ function myFunction() {
 }
 
 
-$('a[href^="#"]').on('click', function(event) {
-    var target = $(this.href);
-    if( target.length ) {
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: target.offset().top
-        }, 1000);
-    }
-});
+$(function () {
 
-///* MOBILE COLLAPSE MENU */
-//(function($) {
-//    $.fn.collapsable = function(options) {
-//        // iterate and reformat each matched element
-//        return this.each(function() {
-//            // cache this:
-//            var obj = $(this);
-//            var tree = obj.next('.navigation');
-//            obj.click(function(){
-//                if( obj.is(':visible') ){tree.toggle();}
-//            });
-//            $(window).resize(function(){
-//                if ( $(window).width() <= 570 ){tree.attr('style','');};
-//            });
-//        });
-//    };
-//})(jQuery);
-//$(document).ready(function(){
-//    $('.slide-trigger').collapsable();
-//});
+    $('.page-scroll ').click(function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
