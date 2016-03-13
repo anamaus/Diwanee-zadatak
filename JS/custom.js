@@ -14,3 +14,7 @@ $(function () {
         event.preventDefault();
     });
 });
+
+$('.icon').click(function () {
+    $('.icon i').toggleClass('fa-bars fa-times');
+});
