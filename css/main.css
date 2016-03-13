@@ -1,7 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
   License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -27,23 +26,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
-body {
-    line-height: 1;
-}
+
 ol, ul {
     list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
 }
 
 a {
@@ -56,13 +41,9 @@ body{
     font-weight: normal;
     font-size: 16px;
     letter-spacing: 1px;
+    line-height: 1;
+}
 
-}
-img {
-    max-width: 100%;
-    height: auto;
-    width: auto\9; /* ie8 */
-}
 /*
     =========================
     Grid
@@ -205,6 +186,11 @@ h6{
     =====================================
 */
 
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
 .dash{
     background: #C41230;
     width: 60px;
@@ -218,12 +204,12 @@ h6{
     margin: 30px auto;
 }
 ::-moz-selection { /* Code for Firefox */
-    color: #9F5642;
+    color: #C41230;
     background:#EDEDED;
 }
 
 ::selection {
-    color: #9F5642;
+    color: #C41230;
     background: #EDEDED;
 }
 
@@ -266,7 +252,7 @@ ul.topnav li a, ul.topnav .followus-link {
     transition: 0.3s;
 }
 ul.topnav li a:hover {
-    color: red;
+    color: #C41230;
 }
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
@@ -275,6 +261,7 @@ ul.topnav li.icon {
 }
 
 /* When the screen is less than 680 pixels wide, hide all list items. Show the list item that contains the link to open and close the topnav (li.icon) */
+
 @media screen and (max-width:680px) {
     ul.topnav li:not(:first-child) {
         display: none;
@@ -284,8 +271,8 @@ ul.topnav li.icon {
         display: inline-block;
     }
     ul.topnav li.icon a {
-        font-size: 26px;
-        margin-top: -7px;
+        font-size: 24px;
+        margin-top: -5px;
     }
 }
 
@@ -318,7 +305,7 @@ ul.topnav li.icon {
         background-color: transparent;
         border-bottom: none;
         color: #2D2D2D;
-        font-size: 26px;
+        font-size: 24px;
     }
 
     ul.topnav.responsive  .transparent-background a{
@@ -397,7 +384,7 @@ header p{
 }
 /*
   ========================================
-  Services
+  Services / Tasks
   ========================================
 */
 
@@ -439,7 +426,7 @@ header p{
 }
 /*
   ========================================
-  Jobs
+  Job Openings
   ========================================
 */
 .job-offer {
@@ -595,7 +582,7 @@ header p{
 
 /*
   ========================================
-  Media queries
+  Media queries begin
   ========================================
 */
 
@@ -640,28 +627,10 @@ header p{
         line-height: 29px;
     }
 
-    #jobs p {
-        font-size: 11px;
-        line-height: 18px;
-    }
-    #jobs .job-offer p {
-        font-size: 8px;
-        line-height: 13px;
-    }
-    .job-offer ul li{
-        font-size: 7px;
-    }
     .btn {
         font-size: 7px;
     }
-    #offices ul li p {
 
-        font-size: 9px;
-    }
-    .primary-footer p {
-
-        font-size: 6px;
-    }
 }
 
 /*
@@ -710,7 +679,7 @@ header p{
 
 /*
   ========================================
-  Jobs small
+  Job Openings small
   ========================================
 */
 @media screen and (max-width: 480px) {
@@ -720,6 +689,17 @@ header p{
     }
     .sign-in-job-button {
         display: none;
+    }
+    #jobs p {
+        font-size: 11px;
+        line-height: 18px;
+    }
+    #jobs .job-offer p {
+        font-size: 8px;
+        line-height: 13px;
+    }
+    .job-offer ul li{
+        font-size: 7px;
     }
     .job-offer ul li{
         border:none;
@@ -740,13 +720,11 @@ header p{
         width:70%;
     }
 
-
 }
-
 
 /*
   ========================================
-  Services small
+  Services / Tasks small
   ========================================
 */
 @media screen and (max-width: 480px) {
@@ -768,21 +746,27 @@ header p{
         margin: 10px 0;
     }
 
+    #offices ul li {
+        line-height: 18px;
+        text-align: center;
+    }
+    #offices ul li p {
+
+        font-size: 9px;
+    }
+    #offices img {
+        margin-right: 0;
+    }
     #offices h5 {
         font-size: 9px;
         text-align: center;
         margin-bottom: 10px;
     }
 
-    #offices ul li {
-        line-height: 18px;
-        text-align: center;
-    }
+    .primary-footer p {
 
-    #offices img {
-        margin-right: 0;
+        font-size: 6px;
     }
-
     .primary-footer{
         background-color: #333;
         padding: 0;
@@ -800,7 +784,6 @@ header p{
         float: none;
         text-align: center;
         padding-bottom: 10px;
-        font-size: 6px;
     }
 
 
