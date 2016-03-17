@@ -1,6 +1,9 @@
 @import 'vendor/_reset.scss';
 
 @import 'base/_variables.scss';
+@import "base/Mixin";
+@import 'components/_buttons.scss';
 
-@import 'components/_buttons';
+@import 'components/_dash.scss';
+@import "layout/grid";
 

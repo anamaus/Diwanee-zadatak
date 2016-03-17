@@ -1,0 +1,12 @@
+.container {
+  width: 970px;
+  @include media("(max-width: 480px)"){
+    width: 100%;
+  }
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.container-padding{
+  padding: 0 100px ;
+}

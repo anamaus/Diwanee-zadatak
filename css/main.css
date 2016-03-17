@@ -161,24 +161,24 @@ h6{
   ========================================
 */
 
-.btn {
+/*.btn {*/
 
-    display: inline-block;
-    margin: 0;
-    padding: 10px 20px;
-    border: 1px solid #979797;
-    font-size : 18px;
-    color : #333;
-    letter-spacing: 2px;
-    line-height: 23px;
-    text-transform: uppercase;
-    transition: all 0.3s;
-}
+    /*display: inline-block;*/
+    /*margin: 0;*/
+    /*padding: 10px 20px;*/
+    /*border: 1px solid #979797;*/
+    /*font-size : 18px;*/
+    /*color : #333;*/
+    /*letter-spacing: 2px;*/
+    /*line-height: 23px;*/
+    /*text-transform: uppercase;*/
+    /*transition: all 0.3s;*/
+/*}*/
 
-.btn:hover {
-    background-color: #333;
-   color : #fff;
-}
+/*.btn:hover {*/
+    /*background-color: #333;*/
+   /*color : #fff;*/
+/*}*/
 
 /*
     =====================================
@@ -472,11 +472,11 @@ header p{
     color: #ffffff;
 }
 
-.job-offer-dark  .btn:hover {
+/*.job-offer-dark  .btn:hover {*/
 
-    background-color: #fff;
-    color : #333;
-}
+    /*background-color: #fff;*/
+    /*color : #333;*/
+/*}*/
 
 /*
   ========================================
