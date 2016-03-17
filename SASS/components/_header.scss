@@ -1,0 +1,18 @@
+header{
+  background-image: url("/images/diwanee-cover.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  max-width: 100%;
+  @include prefix(background-size, cover, webkit moz o);
+}
+
+#main-text{
+  @extend %center-horizontal;
+  text-align: center;
+  p{
+    font-size: $font-size-large-paragrapgh;
+    color: $color-darkGrey;
+    line-height: 40px;
+  }
+}

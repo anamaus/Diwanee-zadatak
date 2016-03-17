@@ -3,10 +3,9 @@
 
 .btn {
   display: inline-block;
-  margin: 0;
-  padding: 10px 20px;
+  padding: $button-padding;
   border: 1px solid $color-darkGrey;
-  font-size : 18px;
+  font-size : $button-font-size;
   color: $color-darkGrey;
   letter-spacing: 2px;
   line-height: 23px;

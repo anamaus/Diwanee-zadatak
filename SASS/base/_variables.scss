@@ -9,7 +9,7 @@ $color-white: #ffffff;
 $color-red: #C41230;
 
 $color-primary: $color-darkGrey;
-$color-secondary: $color-grey;
+$color-secondary-text: $color-grey;
 $color-accent: $color-red;
 
 $font-family-text: 'Source Sans Pro', sans-serif;
@@ -17,3 +17,24 @@ $font-weight-normal: 400;
 $font-weight-light: 100;
 $font--weight-semiBold: 600;
 
+
+
+$font-size-small: 16px;
+$font-size-regular: 18px;
+$font-size-large: 24px;
+$font-size-x-large: 28px;
+$font-size-xx-large: 60px;
+$font-size-xxx-large: 120px;
+$font-size-large-paragrapgh:30px;
+$heading-margin-bottom:22px;
+$letter-spacing-body:1px;
+$font-size-h1:$font-size-xxx-large;
+
+
+$container-width: 970px;
+$column-count: 3;
+
+//button
+
+$button-font-size: $font-size-regular;
+$button-padding:10px 20px;
