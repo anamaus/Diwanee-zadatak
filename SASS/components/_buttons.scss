@@ -1,0 +1,32 @@
+//@import '../base/_variables.scss';
+
+
+.btn {
+  display: inline-block;
+  margin: 0;
+  padding: 10px 20px;
+  border: 1px solid $color-darkGrey;
+  font-size : 18px;
+  color: $color-darkGrey;
+  letter-spacing: 2px;
+  line-height: 23px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  &:hover {
+    background-color: $color-darkGrey;
+    color: $color-white;
+  }
+
+}
+
+.btn-dark {
+  @extend .btn;
+  border-color: $color-white;
+  color: $color-white;
+  background-color: $color-darkGrey;
+  &:hover {
+    background-color: $color-white;
+    color: $color-darkGrey;
+    border-color: $color-darkGrey;
+  }
+}
