@@ -1,6 +1,6 @@
 .primary-footer {
   @extend %clearfix;
-  padding: 15px 0;
+  @include padding(15px 0);
   background-color: $color-blackGrey;
 }
 
@@ -16,7 +16,7 @@
 
 .primary-footer p, #links a {
   font-weight: $font-weight-light;
-  font-size: $font-size-x-small;
+  font-size: $font-size-xx-small;
   color: $color-scorpionGrey;
   letter-spacing: 2px;
 }

@@ -8,11 +8,19 @@
   line-height: 50px;
   color:$color-darkGrey;
   text-align: center;
+  @include media("(max-width: 480px)"){
+    font-size: 11px;
+    line-height: 18px;
+  }
 
 }
 
 .job-offer {
   padding: 80px 0;
+  @include media("(max-width: 480px)"){
+    padding: 30px 0;
+    background-color:$color-alabasterGrey;
+  }
 
 }
 #jobs .job-offer h3{
@@ -24,6 +32,10 @@
   color: $color-grey;
   line-height: 34px;
   text-align: left;
+  @include media("(max-width: 480px)"){
+    font-size: 9px;
+    line-height: 15px;
+  }
 
 }
 
@@ -41,17 +53,40 @@
 }
 .job-offer-dark {
   background-color: $color-blackGrey;
+  @include media("(max-width: 480px)"){
+    background-color:$color-white;
+  }
+
 }
-.job-offer-dark , .job-offer-dark h3, .job-offer-dark a, .job-offer-dark ul li{
+.job-offer-dark ul li{
+   color: $color-white;
+  @include media("(max-width: 480px)"){
+    color: $color-accent;
+  }
+
+ }
+.job-offer-dark , .job-offer-dark h3, .job-offer-dark a{
   color: $color-white;
+  @include media("(max-width: 480px)"){
+    color:$color-darkGrey;
+  }
 }
+
 
 .sign-in-job-button {
   text-align: center;
-  padding: 10% 0;
+  padding: 25% 0;
+  @include media("(max-width: 480px)"){
+display: none;
+  }
 }
 
 #button-load-more{
   text-align: center;
+  margin-top: 50px;
 
  }
+#button-load-more .btn {
+  width:70%;
+  font-size: 7px;
+}

@@ -12,3 +12,10 @@
   }
   #{$property}: #{$value};
 }
+
+@mixin padding ($pads...) {
+  padding: $pads;
+}
+@mixin font-size ($fontSize) {
+  font-size: $fontSize;
+}
