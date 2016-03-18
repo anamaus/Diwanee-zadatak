@@ -108,15 +108,19 @@ h6 {
   .btn:hover, .btn-dark:hover {
     background-color: #333333;
     color: #ffffff; }
+  @media (max-width: 480px) {
+    .btn, .btn-dark {
+      display: none; } }
 
-.btn-dark {
-  border-color: #ffffff;
-  color: #ffffff;
-  background-color: #333333; }
-  .btn-dark:hover {
-    background-color: #ffffff;
-    color: #333333;
-    border-color: #333333; }
+@media (min-width: 481px) {
+  .btn-dark {
+    border-color: #ffffff;
+    color: #ffffff;
+    background-color: #333333; }
+    .btn-dark:hover {
+      background-color: #ffffff;
+      color: #333333;
+      border-color: #333333; } }
 
 .dash {
   background: #C41230;
