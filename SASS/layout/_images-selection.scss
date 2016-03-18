@@ -1,0 +1,9 @@
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+}
+::selection{
+  @include prefix(color, $color-red, webkit moz);
+  @include prefix(background, $color-lightGrey, webkit moz);
+}

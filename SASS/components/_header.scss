@@ -11,5 +11,10 @@ header{
     font-size: $font-size-large-paragraph;
     color: $color-darkGrey;
     line-height: 40px;
+    @include media("(max-width: 480px)"){
+      font-size: 18px;
+      line-height: 29px;
+    }
   }
+
 }

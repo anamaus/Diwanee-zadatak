@@ -61,9 +61,6 @@ header {
   background: no-repeat center center;
   width: 100%; }
 
-* {
-  -webkit-text-size-adjust: none; }
-
 body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
@@ -192,6 +189,10 @@ header {
     font-size: 30px;
     color: #333333;
     line-height: 40px; }
+    @media (max-width: 480px) {
+      #main-text p {
+        font-size: 18px;
+        line-height: 29px; } }
 
 .nav {
   position: relative;
@@ -551,5 +552,19 @@ section {
   @media (max-width: 480px) {
     section {
       padding: 50px 0; } }
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  /* ie8 */ }
+
+::selection {
+  -webkit-color: #C41230;
+  -moz-color: #C41230;
+  color: #C41230;
+  -webkit-background: #ededed;
+  -moz-background: #ededed;
+  background: #ededed; }
 
 /*# sourceMappingURL=Main.css.map */
