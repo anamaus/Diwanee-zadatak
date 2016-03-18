@@ -388,42 +388,42 @@ ul.topnav li.icon {
   ========================================
 */
 
-#services h4{
-    letter-spacing: 4px;
-    line-height: 30px;
+/*#services h4{*/
+    /*letter-spacing: 4px;*/
+    /*line-height: 30px;*/
 
-}
-.service-box {
-    padding: 80px 50px;
-    background-color:#fbfbfb;
+/*}*/
+/*.service-box {*/
+    /*padding: 80px 50px;*/
+    /*background-color:#fbfbfb;*/
 
-}
-.service-box1{
-    background-image: url("../images/triangle-white.png") ;
-    background-repeat: no-repeat;
-    background-position: right 480px bottom 40px;
-    background-size: 80% 80%;
-    -webkit-background-size: 80% 80%;
-    -moz-background-size: 80% 80%;
-    -o-background-size: 80% 80%;
-}
-.service-box2{
-    background-color: #ededed;
-}
-.service-box3{
-    background-image: url("../images/square-white.png");
-    background-repeat: no-repeat;
-    background-position: right -100px bottom -100px;
-    background-size: 70% auto;
-    -webkit-background-size: 70% auto;
-    -moz-background-size: 70% auto;
-    -o-background-size: 70% auto;
-}
-.service-box img {
-    margin-bottom: 30px;
-    max-height: 90px;
+/*}*/
+/*.service-box1{*/
+    /*background-image: url("../images/triangle-white.png") ;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: right 480px bottom 40px;*/
+    /*background-size: 80% 80%;*/
+    /*-webkit-background-size: 80% 80%;*/
+    /*-moz-background-size: 80% 80%;*/
+    /*-o-background-size: 80% 80%;*/
+/*}*/
+/*.service-box2{*/
+    /*background-color: #ededed;*/
+/*}*/
+/*.service-box3{*/
+    /*background-image: url("../images/square-white.png");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: right -100px bottom -100px;*/
+    /*background-size: 70% auto;*/
+    /*-webkit-background-size: 70% auto;*/
+    /*-moz-background-size: 70% auto;*/
+    /*-o-background-size: 70% auto;*/
+/*}*/
+/*.service-box img {*/
+    /*margin-bottom: 30px;*/
+    /*max-height: 90px;*/
 
-}
+/*}*/
 /*
   ========================================
   Job Openings
