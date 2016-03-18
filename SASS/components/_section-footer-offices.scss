@@ -12,7 +12,10 @@
   color:$color-white;
   letter-spacing: 2px;
   margin-bottom: 10px;
-
+  text-align: left;
+  @include media("(max-width: 480px)"){
+    text-align: center;
+  }
 }
 #offices ul li {
 

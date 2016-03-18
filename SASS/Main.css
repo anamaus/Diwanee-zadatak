@@ -431,7 +431,11 @@ ul.topnav li.icon {
   font-weight: 400;
   color: #ffffff;
   letter-spacing: 2px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  text-align: left; }
+  @media (max-width: 480px) {
+    #offices h5 {
+      text-align: center; } }
 
 #offices ul li {
   font-weight: 300;
@@ -474,13 +478,30 @@ ul.topnav li.icon {
 .primary-footer {
   padding: 15px 0;
   background-color: #2D2D2D; }
+  @media (max-width: 480px) {
+    .primary-footer {
+      background-color: #333333;
+      padding: 0; } }
 
 .primary-footer p {
   float: left;
   margin-bottom: 0; }
+  @media (max-width: 480px) {
+    .primary-footer p {
+      font-size: 6px;
+      float: none;
+      text-align: center;
+      padding-bottom: 20px; } }
 
 #links {
   float: right; }
+  @media (max-width: 480px) {
+    #links {
+      float: none;
+      background-color: #2D2D2D;
+      margin-bottom: 20px;
+      padding: 20px 0;
+      text-align: center; } }
 
 .primary-footer p, #links a {
   font-weight: 300;
