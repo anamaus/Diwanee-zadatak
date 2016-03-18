@@ -14,3 +14,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+%bg-image {
+
+  @include prefix(background-size, cover, webkit moz o);
+  background: no-repeat center center;
+  width: 100%;
+}

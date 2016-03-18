@@ -10,3 +10,9 @@
   height: 2px;
   margin: 30px auto;
 }
+
+.dash, .dash-muted{
+  @include media("(max-width: 480px)"){
+    width: 30px;
+  }
+}

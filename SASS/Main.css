@@ -53,6 +53,14 @@ a, a:hover {
   left: 50%;
   transform: translate(-50%, -50%); }
 
+header {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: no-repeat center center;
+  width: 100%; }
+
 body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
@@ -134,16 +142,13 @@ h6 {
   height: 2px;
   margin: 30px auto; }
 
+@media (max-width: 480px) {
+  .dash, .dash-muted {
+    width: 30px; } }
+
 header {
   background-image: url("../images/diwanee-cover.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  max-width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  height: 100vh; }
 
 #main-text {
   text-align: center; }
@@ -186,5 +191,8 @@ section {
   padding: 100px 0; }
   section:first-of-type {
     padding: 0; }
+  @media (max-width: 480px) {
+    section {
+      padding: 50px 0; } }
 
 /*# sourceMappingURL=Main.css.map */

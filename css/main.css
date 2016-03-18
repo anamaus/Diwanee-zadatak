@@ -352,17 +352,17 @@ ul.topnav li.icon {
 */
 
 
-header{
-    background-image: url("../images/diwanee-cover.png");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    height: 100vh;
-    max-width: 100%;
-}
+/*header{*/
+    /*background-image: url("../images/diwanee-cover.png");*/
+    /*background-size: cover;*/
+    /*background-position: center center;*/
+    /*background-repeat: no-repeat;*/
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
+    /*height: 100vh;*/
+    /*max-width: 100%;*/
+/*}*/
 
 /*header h1, header p {*/
     /*letter-spacing: 1px;*/
@@ -639,43 +639,43 @@ header{
   ========================================
 */
 @media screen and (max-width: 480px) {
-    .container {
-        margin: 0 auto;
-        padding-left:0 ;
-        padding-right:0 ;
-        width: auto;
-    }
-    .col-1-3, .col-2-3{
-        width: 100%;
-    }
-    .container-padding {
-        padding: 0 20px;
+    /*.container {*/
+        /*margin: 0 auto;*/
+        /*padding-left:0 ;*/
+        /*padding-right:0 ;*/
+        /*width: auto;*/
+    /*}*/
+    /*.col-1-3, .col-2-3{*/
+        /*width: 100%;*/
+    /*}*/
+    /*.container-padding {*/
+        /*padding: 0 20px;*/
     }
     .hidden-small {
         display: none;
     }
-    section{
-        padding: 50px 0;
-    }
-}
+    /*section{*/
+        /*padding: 50px 0;*/
+    /*}*/
+/*}*/
 /*
   ========================================
   Misc small
   ========================================
 */
-@media screen and (max-width: 480px) {
-    .dash{
-        width: 40px;
-        height: 3px;
-        margin: 20px auto;
-    }
-    .dash-muted {
-        background: #cacaca;
-        width: 40px;
-        height: 2px;
-        margin: 30px auto;
-    }
-}
+/*@media screen and (max-width: 480px) {*/
+    /*.dash{*/
+        /*width: 40px;*/
+        /*height: 3px;*/
+        /*margin: 20px auto;*/
+    /*}*/
+    /*.dash-muted {*/
+        /*background: #cacaca;*/
+        /*width: 40px;*/
+        /*height: 2px;*/
+        /*margin: 30px auto;*/
+    /*}*/
+/*}*/
 
 /*
   ========================================
