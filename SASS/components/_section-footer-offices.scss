@@ -1,0 +1,41 @@
+#offices-footer {
+  @extend %clearfix;
+}
+#offices-footer {
+  padding: 50px 0;
+  background-color: $color-blackGrey;
+}
+
+#offices h5 {
+
+  font-weight: $font-weight-normal;
+  color:$color-white;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+#offices ul li {
+
+  font-weight:$font-weight-light;
+  color: $color-dustGrey;
+  line-height: 28px;
+  font-size: $font-size-regular;
+}
+#offices p {
+  margin-bottom: 0;
+}
+
+#offices img {
+  vertical-align:top;
+  margin-right: 10px;
+}
+
+#offices .col-1-3{
+  padding-left: 50px;
+}
+#offices .col-1-3:first-child{
+  padding-left:0;
+}
+#offices .col-1-3:last-child{
+  padding-left:70px;
+}

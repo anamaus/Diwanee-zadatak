@@ -38,13 +38,13 @@ table {
 a, a:hover {
   text-decoration: none; }
 
-#jobs, .job-offer {
+#jobs, .job-offer, #offices-footer {
   *zoom: 1;
   clear: both; }
-  #jobs:before, .job-offer:before, #jobs:after, .job-offer:after {
+  #jobs:before, .job-offer:before, #offices-footer:before, #jobs:after, .job-offer:after, #offices-footer:after {
     content: " ";
     display: table; }
-  #jobs:after, .job-offer:after {
+  #jobs:after, .job-offer:after, #offices-footer:after {
     clear: both; }
 
 #main-text {
@@ -66,10 +66,15 @@ body {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 1px;
-  color: #888888; }
+  color: #888888;
+  line-height: 26px; }
+
+p {
+  margin-bottom: 22px; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #333333;
+  font-weight: 600;
   margin-bottom: 22px;
   text-transform: uppercase;
   text-align: center; }
@@ -194,6 +199,92 @@ header {
 @media (max-width: 480px) {
   .service-box1, .service-box3 {
     background-image: none; } }
+
+#jobs p {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 50px;
+  color: #333333;
+  text-align: center; }
+
+.job-offer {
+  padding: 80px 0; }
+
+#jobs .job-offer h3 {
+  text-align: left; }
+
+#jobs .job-offer p {
+  font-size: 24px;
+  color: #888888;
+  line-height: 34px;
+  text-align: left; }
+
+.job-offer ul li {
+  display: inline-block;
+  border: 1px solid #888888;
+  padding: 7px 14px;
+  color: #C41230;
+  letter-spacing: 2px;
+  margin-right: 5px; }
+  @media (max-width: 480px) {
+    .job-offer ul li {
+      border: none;
+      padding: 0; } }
+
+.job-offer-dark {
+  background-color: #2D2D2D; }
+
+.job-offer-dark, .job-offer-dark h3, .job-offer-dark a, .job-offer-dark ul li {
+  color: #ffffff; }
+
+.sign-in-job-button {
+  text-align: center;
+  padding: 10% 0; }
+
+#button-load-more {
+  text-align: center; }
+
+#contact {
+  text-align: center; }
+
+#contact img:first-of-type {
+  margin-right: 5px; }
+
+#contact img:last-of-type {
+  margin-left: 5px; }
+
+#offices-footer {
+  padding: 50px 0;
+  background-color: #2D2D2D; }
+
+#offices h5 {
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-align: left; }
+
+#offices ul li {
+  font-weight: 300;
+  color: #9B9B9B;
+  line-height: 28px;
+  font-size: 18px; }
+
+#offices p {
+  margin-bottom: 0; }
+
+#offices img {
+  vertical-align: top;
+  margin-right: 10px; }
+
+#offices .col-1-3, #offices .col-2-3 {
+  padding-left: 50px; }
+
+#offices .col-1-3:first-child, #offices .col-2-3:first-child {
+  padding-left: 0; }
+
+#offices .col-1-3:last-child, #offices .col-2-3:last-child {
+  padding-left: 70px; }
 
 *,
 *:before,

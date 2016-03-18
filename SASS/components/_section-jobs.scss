@@ -1,0 +1,57 @@
+#jobs, .job-offer{
+  @extend %clearfix;
+}
+
+#jobs p {
+  font-weight: $font-weight-light;
+  font-size: $font-size-larger-paragraph;
+  line-height: 50px;
+  color:$color-darkGrey;
+  text-align: center;
+
+}
+
+.job-offer {
+  padding: 80px 0;
+
+}
+#jobs .job-offer h3{
+  text-align: left;
+}
+#jobs .job-offer p {
+
+  font-size: $font-size-large;
+  color: $color-grey;
+  line-height: 34px;
+  text-align: left;
+
+}
+
+.job-offer ul li{
+  display: inline-block;
+  border: 1px solid $color-grey;
+  padding: 7px 14px;
+  color: $color-accent;
+  letter-spacing: 2px;
+  margin-right: 5px;
+  @include media("(max-width: 480px)"){
+    border:none;
+    padding: 0;
+  }
+}
+.job-offer-dark {
+  background-color: $color-blackGrey;
+}
+.job-offer-dark , .job-offer-dark h3, .job-offer-dark a, .job-offer-dark ul li{
+  color: $color-white;
+}
+
+.sign-in-job-button {
+  text-align: center;
+  padding: 10% 0;
+}
+
+#button-load-more{
+  text-align: center;
+
+ }

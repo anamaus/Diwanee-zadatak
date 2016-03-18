@@ -1,4 +1,4 @@
-//@import '../base/_variables.scss';
+
 
 
 .btn {
@@ -15,7 +15,7 @@
     background-color: $color-darkGrey;
     color: $color-white;
   }
-  @include media("(max-width: 480px)"){
+  @include media('(max-width: 480px)'){
     display: none;
   }
 }

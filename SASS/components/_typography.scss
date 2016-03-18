@@ -6,11 +6,16 @@ body {
   }
   letter-spacing: $letter-spacing-body;
   color:$color-secondary-text ;
+  line-height: $line-height-body;
+}
+p {
+  margin-bottom: $heading-paragraph-margin-bottom;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: $color-primary;
-  margin-bottom: $heading-margin-bottom;
+  font-weight: $font-weight-semiBold;
+  margin-bottom: $heading-paragraph-margin-bottom;
   text-transform: uppercase;
   text-align: center;
 }
@@ -19,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 h1{
   font:{
     size: $font-size-h1;
-    weight: $font--weight-semiBold;
+    weight: $font-weight-semiBold;
   }
   @include media("(max-width: 480px)"){
     font-size:15px;
@@ -42,7 +47,7 @@ h4{
 
 }
 h5{
-  font-size: 18px;
+  font-size: $font-size-h5;
 }
 h6{
   font-size: 16px;
