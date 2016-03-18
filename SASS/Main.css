@@ -131,7 +131,7 @@ h6 {
   margin: 30px auto; }
 
 header {
-  background-image: url("/images/diwanee-cover.png");
+  background-image: url("../images/diwanee-cover.png");
   background-position: center center;
   background-repeat: no-repeat;
   height: 100vh;
@@ -158,8 +158,7 @@ header {
 .container {
   width: 970px;
   margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px; }
+  padding: 0 30px; }
   @media (max-width: 480px) {
     .container {
       width: 100%; } }
