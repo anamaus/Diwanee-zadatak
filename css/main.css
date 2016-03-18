@@ -682,45 +682,45 @@ ul.topnav li.icon {
   Job Openings small
   ========================================
 */
-@media screen and (max-width: 480px) {
-    .job-offer {
-        padding: 30px 0;
-        background-color:#fbfbfb;
-    }
-    .sign-in-job-button {
-        display: none;
-    }
-    #jobs p {
-        font-size: 11px;
-        line-height: 18px;
-    }
-    #jobs .job-offer p {
-        font-size: 8px;
-        line-height: 13px;
-    }
-    .job-offer ul li{
-        font-size: 7px;
-    }
+/*@media screen and (max-width: 480px) {*/
+    /*.job-offer {*/
+        /*padding: 30px 0;*/
+        /*background-color:#fbfbfb;*/
+    /*}*/
+    /*.sign-in-job-button {*/
+        /*display: none;*/
+    /*}*/
+    /*#jobs p {*/
+        /*font-size: 11px;*/
+        /*line-height: 18px;*/
+    /*}*/
+    /*#jobs .job-offer p {*/
+        /*font-size: 8px;*/
+        /*line-height: 13px;*/
+    /*}*/
+    /*.job-offer ul li{*/
+        /*font-size: 7px;*/
+    /*}*/
     /*.job-offer ul li{*/
         /*border:none;*/
         /*padding: 0;*/
         /*color: #C41230;*/
     /*}*/
-    .job-offer-dark {
-        background-color: #fff;
-    }
-    .job-offer-dark h3{
-        color:#333333 ;
-    }
+    /*.job-offer-dark {*/
+        /*background-color: #fff;*/
+    /*}*/
+    /*.job-offer-dark h3{*/
+        /*color:#333333 ;*/
+    /*}*/
 
-    #button-load-more{
-        margin-top: 50px;
-    }
-    #button-load-more .btn {
-        width:70%;
-    }
+    /*#button-load-more{*/
+        /*margin-top: 50px;*/
+    /*}*/
+    /*#button-load-more .btn {*/
+        /*width:70%;*/
+    /*}*/
 
-}
+/*}*/
 
 /*
   ========================================

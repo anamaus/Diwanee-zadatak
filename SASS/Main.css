@@ -61,6 +61,9 @@ header {
   background: no-repeat center center;
   width: 100%; }
 
+* {
+  -webkit-text-size-adjust: none; }
+
 body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
@@ -176,7 +179,8 @@ h6 {
 
 @media (max-width: 480px) {
   .dash, .dash-muted {
-    width: 30px; } }
+    width: 30px;
+    margin: 30px auto; } }
 
 header {
   background-image: url("../images/diwanee-cover.png");
@@ -357,8 +361,8 @@ ul.topnav li.icon {
   text-align: left; }
   @media (max-width: 480px) {
     #jobs .job-offer p {
-      font-size: 9px;
-      line-height: 15px; } }
+      font-size: 8px;
+      line-height: 13px; } }
 
 .job-offer ul li {
   display: inline-block;
@@ -370,7 +374,8 @@ ul.topnav li.icon {
   @media (max-width: 480px) {
     .job-offer ul li {
       border: none;
-      padding: 0; } }
+      padding: 0;
+      font-size: 7px; } }
 
 .job-offer-dark {
   background-color: #2D2D2D; }
@@ -401,9 +406,10 @@ ul.topnav li.icon {
   text-align: center;
   margin-top: 50px; }
 
-#button-load-more .btn, #button-load-more .btn-dark {
-  width: 70%;
-  font-size: 7px; }
+@media (max-width: 480px) {
+  #button-load-more .btn, #button-load-more .btn-dark {
+    width: 70%;
+    font-size: 7px; } }
 
 #about {
   background-color: #fbfbfb; }
