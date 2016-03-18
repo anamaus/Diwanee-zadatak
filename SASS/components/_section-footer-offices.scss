@@ -3,7 +3,7 @@
 }
 #offices-footer {
   padding: 50px 0;
-  background-color: $color-blackGrey;
+  background-color: $color-darkGrey;
 }
 
 #offices h5 {
@@ -22,7 +22,7 @@
   font-size: $font-size-regular;
 }
 #offices p {
-  margin-bottom: 0;
+  margin-bottom: $margin-bottom-none;
 }
 
 #offices img {

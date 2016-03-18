@@ -1,0 +1,28 @@
+.primary-footer {
+  @extend %clearfix;
+  padding: 15px 0;
+  background-color: $color-blackGrey;
+}
+
+.primary-footer p{
+  float: left;
+  margin-bottom: $margin-bottom-none;
+}
+#links {
+  float: right;
+}
+
+
+
+.primary-footer p, #links a {
+  font-weight: $font-weight-light;
+  font-size: $font-size-x-small;
+  color: $color-scorpionGrey;
+  letter-spacing: 2px;
+}
+
+#links .fa {
+
+   font-size: $font-size-small;
+   margin-right: 20px;
+ }
