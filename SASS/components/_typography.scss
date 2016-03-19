@@ -1,13 +1,12 @@
 
 body {
+  @include size-height($font-size-x-small, $line-height-body);
   font:{
     family:$font-family-text;
-    size:$font-size-small;
-    weight:$font-weight-normal;
-  }
+    weight:$font-weight-normal; }
   letter-spacing: 1px;
   color:$color-secondary-text ;
-  line-height: $line-height-body;
+
   @include media("(max-width: 480px)"){
     font-size: 9px;
     line-height: 15px;
@@ -27,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 h1{
-  @include size-height($font-size-h1, 75px);
+  @include size-height($font-size-h1,1);
   @include media("(max-width: 480px)"){
     @include size-height($font-size-mobile-h1, 49px);
   }

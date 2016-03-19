@@ -44,7 +44,7 @@ $font-size-xxx-large: 120px;
 
 
 
-
+//font usage headings
 
 $font-size-h1:$font-size-xxx-large;
 $font-size-h2:$font-size-xx-large;
@@ -53,7 +53,7 @@ $font-size-h4:$font-size-large;
 $font-size-h5:$font-size-small;
 $font-size-h6:$font-size-x-small;
 
-//font usage mobile
+//font usage headings - mobile
 
 $font-size-mobile-h1:$font-size-x-large;
 $font-size-mobile-h2:$font-size-normal;
@@ -66,8 +66,7 @@ $font-size-mobile-h6:$font-size-mobile-small;
 
 $font-size-body: $font-size-small;
 $line-height-body:26px;
-
-$font-size-large-paragraph:30px;
+$font-size-large-paragraph:$font-size-x-large;
 
 $heading-paragraph-margin-bottom:22px;
 
@@ -75,7 +74,7 @@ $heading-paragraph-margin-bottom:22px;
 //grid
 $container-width: 970px;
 $column-count: 3;
-$container-width-narrow:$container-width(80%);
+
 
 //button
 
