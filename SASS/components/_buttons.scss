@@ -5,13 +5,13 @@
   display: inline-block;
  @include padding(10px 20px);
   @include size-height($button-font-size,23px);
-  border: 1px solid $color-darkGrey;
-  color: $color-darkGrey;
+  border: 1px solid $button-border;
+  color: $button-primary-color;
   letter-spacing: 2px;
   text-transform: uppercase;
   transition: all 0.3s;
   &:hover {
-    background-color: $color-darkGrey;
+    background-color: $button-primary-color;
     color: $color-white;
   }
 

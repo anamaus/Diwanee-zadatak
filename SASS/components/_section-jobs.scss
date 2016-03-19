@@ -5,7 +5,7 @@
 #jobs p {
   @include size-height($font-size-larger-paragraph, 50px);
   font-weight: $font-weight-light;
-  color:$color-darkGrey;
+  color:$color-primary-text;
   text-align: center;
   @include media("(max-width: 480px)"){
     @include size-height(11px, 18px);
@@ -65,7 +65,7 @@
 .job-offer-dark , .job-offer-dark h3, .job-offer-dark a{
   color: $color-white;
   @include media("(max-width: 480px)"){
-    color:$color-darkGrey;
+    color:$color-primary-text;
   }
 }
 

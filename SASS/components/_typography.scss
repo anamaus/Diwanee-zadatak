@@ -5,7 +5,7 @@ body {
     size:$font-size-small;
     weight:$font-weight-normal;
   }
-  letter-spacing: $letter-spacing-body;
+  letter-spacing: 1px;
   color:$color-secondary-text ;
   line-height: $line-height-body;
   @include media("(max-width: 480px)"){
@@ -18,7 +18,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $color-primary;
+  color: $color-primary-text;
   font-weight: $font-weight-semiBold;
   margin-bottom: $heading-paragraph-margin-bottom;
   text-transform: uppercase;
@@ -56,7 +56,7 @@ h4{
   }
 }
 h5{
-  font-size: $font-size-h5;
+  font-size: $font-size-regular;
   @include media("(max-width: 480px)"){
     @include size-height(9px, 15px);
   }

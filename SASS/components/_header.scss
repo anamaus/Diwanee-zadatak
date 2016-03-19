@@ -9,7 +9,7 @@ header{
   text-align: center;
   p{
     @include size-height( $font-size-large-paragraph, 40px);
-    color: $color-darkGrey;
+    color: $color-primary-text;
     @include media("(max-width: 480px)"){
       @include size-height($font-size-regular, 29px);
     }
