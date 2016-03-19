@@ -8,15 +8,22 @@
 
 .container {
   width: $container-width;
-  @include media("(max-width: 480px)"){
-    width: 100%;
-    padding:0;
-  }
   margin: 0 auto;
   padding:0 30px;
+  @include media("(max-width: 480px)"){
+    width: 100%;
+    padding:0 10px;
+  }
+
 
 }
-
+.container-narrow {
+  @extend .container;
+  padding:0 100px;
+  @include media("(max-width: 480px)"){
+    padding:0 10px;
+  }
+}
 
 .col-1-3 {
 
