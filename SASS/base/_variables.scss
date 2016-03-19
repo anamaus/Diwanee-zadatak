@@ -22,19 +22,51 @@ $font-family-text: 'Source Sans Pro', sans-serif;
 $font-weight-normal: 400;
 $font-weight-light: 300;
 $font-weight-semiBold: 600;
+
 //font-size
-$font-size-xx-small: 12px;
-$font-size-x-small: 13px;
-$font-size-small: 16px;
-$font-size-regular: 18px;
+$font-size-mobile-xxx-small: 6px;
+$font-size-mobile-xx-small: 7px;
+$font-size-mobile-x-small: 8px;
+$font-size-mobile-small: 9px;
+$font-size-mobile-regular:11px;
+
+$font-size-xxx-small: 12px;
+$font-size-xx-small: 13px;
+$font-size-x-small: 16px;
+$font-size-small: 18px;
+$font-size-normal: 20px;
 $font-size-large: 24px;
-$font-size-x-large: 28px;
+$font-size-larger: 28px;
+$font-size-x-large: 30px;
+$font-size-x-larger:36px;
 $font-size-xx-large: 60px;
 $font-size-xxx-large: 120px;
 
+
+
+
+
+$font-size-h1:$font-size-xxx-large;
+$font-size-h2:$font-size-xx-large;
+$font-size-h3:$font-size-larger;
+$font-size-h4:$font-size-large;
+$font-size-h5:$font-size-small;
+$font-size-h6:$font-size-x-small;
+
+//font usage mobile
+
+$font-size-mobile-h1:$font-size-x-large;
+$font-size-mobile-h2:$font-size-normal;
+$font-size-mobile-h3:$font-size-mobile-x-small;
+$font-size-mobile-h4:$font-size-xxx-small;
+$font-size-mobile-h5:$font-size-mobile-small;
+$font-size-mobile-h6:$font-size-mobile-small;
+
+
+
 $font-size-body: $font-size-small;
 $line-height-body:26px;
-$font-size-larger-paragraph:36px;
+
 $font-size-large-paragraph:30px;
 
 $heading-paragraph-margin-bottom:22px;
@@ -47,7 +79,7 @@ $container-width-narrow:$container-width(80%);
 
 //button
 
-$button-font-size: $font-size-regular;
+$button-font-size: $font-size-small;
 $button-padding:10px 20px;
 
 //misc

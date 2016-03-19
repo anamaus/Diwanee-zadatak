@@ -3,12 +3,13 @@
 }
 
 #jobs p {
-  @include size-height($font-size-larger-paragraph, 50px);
+  @include size-height($font-size-x-larger, 50px);
   font-weight: $font-weight-light;
   color:$color-primary-text;
   text-align: center;
+  margin-bottom: 50px;
   @include media("(max-width: 480px)"){
-    @include size-height(11px, 18px);
+    @include size-height($font-size-mobile-regular, 18px);
 
   }
 
@@ -30,7 +31,7 @@
   color: $color-grey;
   text-align: left;
   @include media("(max-width: 480px)"){
-    @include size-height(8px, 13px);
+    @include size-height($font-size-mobile-x-small, 13px);
   }
 
 }
@@ -45,7 +46,7 @@
   @include media("(max-width: 480px)"){
     border:none;
     padding: 0;
-    @include size-height(7px, 11px);
+    @include size-height($font-size-mobile-xx-small, 11px);
   }
 }
 .job-offer-dark {
@@ -86,6 +87,6 @@ display: none;
 #button-load-more .btn {
   @include media("(max-width: 480px)") {
     width: 70%;
-    @include size-height(7px, 11px);
+    @include size-height($font-size-mobile-xx-small, 11px);
   }
 }

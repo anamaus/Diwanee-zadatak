@@ -27,47 +27,47 @@ h1, h2, h3, h4, h5, h6 {
 
 
 h1{
-  @include size-height($font-size-xxx-large, 75px);
+  @include size-height($font-size-h1, 75px);
   @include media("(max-width: 480px)"){
-    @include size-height(30px, 49px);
+    @include size-height($font-size-mobile-h1, 49px);
   }
   }
 
 h2{
-  @include size-height($font-size-xx-large, 75px);
+  @include size-height($font-size-h2, 75px);
   letter-spacing: 3px;
   @include media("(max-width: 480px)"){
-    @include size-height(20px, 32px);
+    @include size-height($font-size-mobile-h2, 32px);
   }
 
 }
 h3{
-  @include size-height($font-size-x-large, 36px);
+  @include size-height($font-size-h3, 36px);
   letter-spacing: 2.33px;
   @include media("(max-width: 480px)"){
-    @include size-height(8px, 13px);
+    @include size-height($font-size-mobile-h3, 13px);
   }
 }
 h4{
-  @include size-height($font-size-large, 30px);
+  @include size-height($font-size-h4, 30px);
   letter-spacing: 4px;
   @include media("(max-width: 480px)"){
-    @include size-height($font-size-xx-small, 19px);
+    @include size-height($font-size-mobile-h4, 19px);
   }
 }
 h5{
-  font-size: $font-size-regular;
+  font-size: $font-size-h5;
   @include media("(max-width: 480px)"){
-    @include size-height(9px, 15px);
+    @include size-height($font-size-mobile-h5, 15px);
   }
 }
 h6{
-  @include size-height($font-size-small, $line-height-body);
+  @include size-height($font-size-h6, $line-height-body);
   color: $color-grey;
   font-weight: $font-weight-light;
   margin-bottom: 50px;
   @include media("(max-width: 480px)"){
-     @include size-height(9px, 15px);
+     @include size-height($font-size-mobile-h6, 15px);
   }
 
 }

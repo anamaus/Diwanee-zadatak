@@ -7,7 +7,6 @@
 }
 
 #offices h5 {
-  @include size-height($font-size-regular, 29px);
   color:$color-white;
   letter-spacing: 2px;
   margin-bottom: 10px;
@@ -17,11 +16,11 @@
   }
 }
 #offices ul li {
-  @include size-height($font-size-regular, 28px);
+  @include size-height($font-size-small, 28px);
   font-weight:$font-weight-light;
   color: $color-dustGrey;
    @include media("(max-width: 480px)"){
-     @include size-height(9px, 15px);
+     @include size-height($font-size-mobile-small, 15px);
     text-align: center;
   }
 }

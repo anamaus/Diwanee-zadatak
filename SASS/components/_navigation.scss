@@ -30,13 +30,11 @@ ul.topnav .followus-link {
     border-bottom: 1px solid $color-grey;
   }
   p {
-
+    @include size-height($font-size-mobile-x-small, 20px);
     text-align: left;
     margin-bottom: $margin-bottom-none;
     color: $color-grey;
-    line-height: 20px;
     margin-left: 10px;
-    font-size: 8px;
 
   }
   .social-links-right {
@@ -63,7 +61,7 @@ ul.topnav li:not(:first-child) {
 }
 
 // Hide the list item that contains the link that should open and close the topnav on small screens
-//show and style icon for small screen
+//show and style icon on small screen
 
 ul.topnav li.icon {
   display: none;
