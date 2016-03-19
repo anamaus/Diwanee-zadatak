@@ -61,6 +61,19 @@ header {
   background: no-repeat center center;
   width: 100%; }
 
+ul.topnav li a, ul.topnav .followus-link {
+  display: inline-block;
+  font-size: 13px;
+  color: #333333;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s; }
+  ul.topnav li a:hover, ul.topnav .followus-link:hover {
+    color: #C41230; }
+
 body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
@@ -196,12 +209,16 @@ header {
         font-size: 18px;
         line-height: 29px; } }
 
+.logo {
+  margin-top: 20px; }
+  @media (max-width: 480px) {
+    .logo {
+      margin-left: 16px; } }
+
 .nav {
   position: relative;
-  margin-top: -55px; }
-  @media (max-width: 480px) {
-    .nav {
-      margin-top: -45px; } }
+  margin-top: -40px;
+  z-index: 3; }
 
 ul.topnav {
   background-color: transparent;
@@ -210,93 +227,72 @@ ul.topnav {
 ul.topnav li {
   display: inline-block; }
 
-ul.topnav li a, ul.topnav .followus-link {
-  display: inline-block;
-  font-size: 13px;
-  color: #333333;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: 0.3s; }
-  ul.topnav li a:hover, ul.topnav .followus-link:hover {
-    color: #C41230; }
-
 ul.topnav .followus-link {
   display: none; }
-
-ul.topnav li.icon {
-  display: none; }
-
-@media screen and (max-width: 680px) {
-  ul.topnav li:not(:first-child) {
-    display: none; }
-
-  ul.topnav li.icon {
-    float: right;
-    display: inline-block; }
-
-  ul.topnav li.icon a {
-    font-size: 24px;
-    margin-top: -5px; } }
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon.  */
-@media screen and (max-width: 680px) {
-  ul.topnav.responsive {
-    position: relative;
-    z-index: 3; }
-
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0; }
-
-  ul.topnav.responsive li {
-    float: none;
-    display: inline; }
-
-  ul.topnav.responsive li a, ul.topnav.responsive .followus-link {
-    display: block;
-    text-align: center;
-    background-color: #2D2D2D;
-    color: #ffffff;
-    border-bottom: 1px solid #888888; }
-
-  ul.topnav.responsive .icon a {
-    background-color: transparent;
-    border-bottom: none;
-    color: #2D2D2D; }
-
-  ul.topnav.responsive .transparent-background a {
-    background-color: transparent;
-    border-bottom: none;
-    margin-bottom: 20px; }
-
-  ul.topnav.responsive .followus-link p {
+  @media (max-width: 480px) {
+    ul.topnav .followus-link {
+      display: block;
+      background-color: #2D2D2D;
+      color: #ffffff;
+      border-bottom: 1px solid #888888; } }
+  ul.topnav .followus-link p {
     text-align: left;
     margin-bottom: 0;
     color: #888888;
     line-height: 20px;
     margin-left: 10px;
     font-size: 8px; }
-
-  ul.topnav.responsive .followus-link .social-links-right {
+  ul.topnav .followus-link .social-links-right {
     text-align: right;
     display: inline; }
+    ul.topnav .followus-link .social-links-right a {
+      display: inline;
+      padding: 0;
+      border-bottom: none;
+      float: right;
+      margin-right: 20px;
+      font-size: 24px;
+      color: #888888; }
 
-  ul.topnav.responsive .followus-link .social-links-right a {
-    display: inline;
-    padding: 0;
-    border-bottom: none;
-    float: right;
-    margin-right: 20px;
+@media (max-width: 480px) {
+  ul.topnav li:not(:first-child) {
+    display: none; } }
+
+ul.topnav li.icon {
+  display: none; }
+  @media (max-width: 480px) {
+    ul.topnav li.icon {
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 0; } }
+  ul.topnav li.icon a {
     font-size: 24px;
-    color: #888888; }
+    margin-top: -5px; }
 
-  .logo {
-    margin-left: 16px; } }
-.logo {
-  padding-top: 20px; }
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon.  */
+@media (max-width: 480px) {
+  ul.topnav.responsive li {
+    display: inline; } }
+
+@media (max-width: 480px) {
+  ul.topnav.responsive li a {
+    display: block;
+    background-color: #2D2D2D;
+    color: #ffffff;
+    border-bottom: 1px solid #888888; } }
+
+@media (max-width: 480px) {
+  ul.topnav.responsive .icon a {
+    background-color: transparent;
+    border-bottom: none;
+    color: #2D2D2D; } }
+
+@media (max-width: 480px) {
+  ul.topnav.responsive .transparent-background a {
+    background-color: transparent;
+    border-bottom: none;
+    margin-bottom: 20px; } }
 
 .service-box {
   text-align: center;

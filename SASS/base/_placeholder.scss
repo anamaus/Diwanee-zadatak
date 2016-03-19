@@ -21,3 +21,20 @@
   background: no-repeat center center;
   width: 100%;
 }
+
+
+%navbar-links{
+  display: inline-block;
+  font-size: $font-size-x-small;
+  color: $color-primary-text;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  &:hover {
+    color: $color-accent;
+  }
+}
+

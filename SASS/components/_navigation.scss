@@ -1,10 +1,7 @@
 .nav {
   position: relative;
-  margin-top: -55px;
-  @include media("(max-width: 480px)"){
-    margin-top: -45px;
-  }
-
+  margin-top: -40px;
+  z-index: 3
 }
 
 ul.topnav {
@@ -17,115 +14,118 @@ ul.topnav li {
   display: inline-block;
 }
 
-ul.topnav li a, ul.topnav .followus-link {
-  display: inline-block;
-  font-size: $font-size-x-small;
-  color: $color-darkGrey;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: 0.3s;
-  &:hover {
-    color: $color-red;
+//style navbar links
+ul.topnav li a {
+  @extend %navbar-links;
+}
+
+// Style 'follow us' list item in navbar. Hide on desktop, show on small.
+ul.topnav .followus-link {
+  @extend %navbar-links;
+  display: none;
+  @include media("(max-width: 480px)") {
+    display: block;
+    background-color: $color-blackGrey;
+    color: $color-white;
+    border-bottom: 1px solid $color-grey;
+  }
+  p {
+
+    text-align: left;
+    margin-bottom: $margin-bottom-none;
+    color: $color-grey;
+    line-height: 20px;
+    margin-left: 10px;
+    font-size: 8px;
+
+  }
+  .social-links-right {
+    text-align: right;
+    display: inline;
+    a {
+      display: inline;
+      padding: 0;
+      border-bottom: none;
+      float: right;
+      margin-right: 20px;
+      font-size: $font-size-large;
+      color: $color-grey;
+    }
+
   }
 }
 
-
-ul.topnav .followus-link{
-
-  display:none ;
-
+// When the screen is less than 480 pixels wide, hide all list items.Show the list item that contains the link to open and close the topnav (li.icon)
+ul.topnav li:not(:first-child) {
+  @include media("(max-width: 480px)") {
+    display: none;
+  }
 }
 
 // Hide the list item that contains the link that should open and close the topnav on small screens
+//show and style icon for small screen
+
 ul.topnav li.icon {
   display: none;
- }
-
-@media screen and (max-width:680px) {
-
-  ul.topnav li:not(:first-child) {
-    display: none;
-  }
-  ul.topnav li.icon {
-    float: right;
+  @include media("(max-width: 480px)") {
     display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
-  ul.topnav li.icon a {
+  a {
     font-size: $font-size-large;
     margin-top: -5px;
   }
 }
 
+
+
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon.  */
-@media screen and (max-width:680px) {
-  ul.topnav.responsive {
-    position: relative;
-    z-index: 3
-  }
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  ul.topnav.responsive li {
-    float: none;
+
+ul.topnav.responsive li {
+  @include media("(max-width: 480px)") {
     display: inline;
   }
+}
 
-  ul.topnav.responsive li a, ul.topnav.responsive .followus-link {
+//style navbar links for small screens
+
+ul.topnav.responsive li a {
+  @include media("(max-width: 480px)") {
     display: block;
-    text-align: center;
     background-color: $color-blackGrey;
     color: $color-white;
     border-bottom: 1px solid $color-grey;
   }
+}
 
 
-  ul.topnav.responsive  .icon a{
+//style for hamburger icon - transparent bg
+
+ul.topnav.responsive .icon a {
+  @include media("(max-width: 480px)") {
     background-color: transparent;
     border-bottom: none;
     color: $color-blackGrey;
 
   }
+}
 
-  ul.topnav.responsive  .transparent-background a{
+//first list item made transparent
+ul.topnav.responsive .transparent-background a {
+  @include media("(max-width: 480px)") {
     background-color: transparent;
     border-bottom: none;
     margin-bottom: 20px;
   }
-  ul.topnav.responsive .followus-link p{
-    text-align: left;
-    margin-bottom: $margin-bottom-none;
-    color: $color-grey;
-    line-height:20px;
-    margin-left: 10px;
-    font-size:8px ;
-  }
-  ul.topnav.responsive .followus-link .social-links-right{
-    text-align: right;
-    display: inline;
-
-  }
-  ul.topnav.responsive .followus-link .social-links-right a{
-    display: inline;
-    padding: 0;
-    border-bottom: none;
-    float: right;
-    margin-right: 20px;
-    font-size: $font-size-large;
-    color: $color-grey;
-
-  }
-  .logo {
-    margin-left: 16px;
-  }
 }
 
-.logo {
-  padding-top: 20px;
-}
+
+
+
+
+
+
 
 

@@ -16,3 +16,9 @@ header{
   }
 
 }
+
+.logo {
+  margin-top: 20px;
+  @include media("(max-width: 480px)"){
+    margin-left: 16px;}
+}
