@@ -1,9 +1,11 @@
+//media queries
 @mixin media($queryString){
   @media #{$queryString} {
     @content;
   }
 }
 
+//set vendor prefix
 @mixin prefix($property, $value, $vendors: webkit moz ms o) {
   @if $vendors {
     @each $vendor in $vendors {
@@ -13,9 +15,14 @@
   #{$property}: #{$value};
 }
 
+//set padding
 @mixin padding ($pads...) {
   padding: $pads;
 }
-@mixin font-size ($fontSize) {
-  font-size: $fontSize;
+
+//set font-size and line-height
+@mixin size-height($sizeValue, $height){
+  font-size:$sizeValue;
+  line-height: $height;
+
 }

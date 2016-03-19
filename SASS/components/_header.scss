@@ -8,12 +8,10 @@ header{
   @extend %center-horizontal;
   text-align: center;
   p{
-    font-size: $font-size-large-paragraph;
+    @include size-height( $font-size-large-paragraph, 40px);
     color: $color-darkGrey;
-    line-height: 40px;
     @include media("(max-width: 480px)"){
-      font-size: 18px;
-      line-height: 29px;
+      @include size-height($font-size-regular, 29px);
     }
   }
 

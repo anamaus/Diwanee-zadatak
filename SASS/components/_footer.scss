@@ -12,7 +12,7 @@
   float: left;
   margin-bottom: $margin-bottom-none;
   @include media("(max-width: 480px)") {
-    font-size: 6px;
+    @include size-height(6px, 10px);
     float: none;
     text-align: center;
     padding-bottom: 20px;

@@ -4,11 +4,10 @@
 .btn {
   display: inline-block;
  @include padding(10px 20px);
+  @include size-height($button-font-size,23px);
   border: 1px solid $color-darkGrey;
-  font-size : $button-font-size;
   color: $color-darkGrey;
   letter-spacing: 2px;
-  line-height: 23px;
   text-transform: uppercase;
   transition: all 0.3s;
   &:hover {

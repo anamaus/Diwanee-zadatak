@@ -85,7 +85,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 120px;
-  font-weight: 600;
   line-height: 75px; }
   @media (max-width: 480px) {
     h1 {
@@ -94,8 +93,8 @@ h1 {
 
 h2 {
   font-size: 60px;
-  letter-spacing: 3px;
-  line-height: 75px; }
+  line-height: 75px;
+  letter-spacing: 3px; }
   @media (max-width: 480px) {
     h2 {
       font-size: 20px;
@@ -103,8 +102,8 @@ h2 {
 
 h3 {
   font-size: 28px;
-  letter-spacing: 2.33px;
-  line-height: 36px; }
+  line-height: 36px;
+  letter-spacing: 2.33px; }
   @media (max-width: 480px) {
     h3 {
       font-size: 8px;
@@ -112,8 +111,8 @@ h3 {
 
 h4 {
   font-size: 24px;
-  letter-spacing: 3px;
-  line-height: 75px; }
+  line-height: 30px;
+  letter-spacing: 4px; }
   @media (max-width: 480px) {
     h4 {
       font-size: 12px;
@@ -127,12 +126,15 @@ h5 {
       line-height: 15px; } }
 
 h6 {
+  font-size: 16px;
+  line-height: 26px;
   color: #888888;
   font-weight: 300;
   margin-bottom: 50px; }
   @media (max-width: 480px) {
     h6 {
-      font-size: 9px; } }
+      font-size: 9px;
+      line-height: 15px; } }
 
 @media (max-width: 480px) {
   .hidden-text-small {
@@ -141,11 +143,11 @@ h6 {
 .btn, .btn-dark {
   display: inline-block;
   padding: 10px 20px;
-  border: 1px solid #333333;
   font-size: 18px;
+  line-height: 23px;
+  border: 1px solid #333333;
   color: #333333;
   letter-spacing: 2px;
-  line-height: 23px;
   text-transform: uppercase;
   transition: all 0.3s; }
   .btn:hover, .btn-dark:hover {
@@ -187,8 +189,8 @@ header {
   text-align: center; }
   #main-text p {
     font-size: 30px;
-    color: #333333;
-    line-height: 40px; }
+    line-height: 40px;
+    color: #333333; }
     @media (max-width: 480px) {
       #main-text p {
         font-size: 18px;
@@ -296,10 +298,6 @@ ul.topnav li.icon {
 .logo {
   padding-top: 20px; }
 
-#services h4 {
-  letter-spacing: 4px;
-  line-height: 30px; }
-
 .service-box {
   text-align: center;
   padding: 80px 50px;
@@ -335,9 +333,9 @@ ul.topnav li.icon {
     background-image: none; } }
 
 #jobs p {
-  font-weight: 300;
   font-size: 36px;
   line-height: 50px;
+  font-weight: 300;
   color: #333333;
   text-align: center; }
   @media (max-width: 480px) {
@@ -357,8 +355,8 @@ ul.topnav li.icon {
 
 #jobs .job-offer p {
   font-size: 24px;
-  color: #888888;
   line-height: 34px;
+  color: #888888;
   text-align: left; }
   @media (max-width: 480px) {
     #jobs .job-offer p {
@@ -376,7 +374,8 @@ ul.topnav li.icon {
     .job-offer ul li {
       border: none;
       padding: 0;
-      font-size: 7px; } }
+      font-size: 7px;
+      line-height: 11px; } }
 
 .job-offer-dark {
   background-color: #2D2D2D; }
@@ -410,7 +409,8 @@ ul.topnav li.icon {
 @media (max-width: 480px) {
   #button-load-more .btn, #button-load-more .btn-dark {
     width: 70%;
-    font-size: 7px; } }
+    font-size: 7px;
+    line-height: 11px; } }
 
 #about {
   background-color: #fbfbfb; }
@@ -429,7 +429,8 @@ ul.topnav li.icon {
   background-color: #333333; }
 
 #offices h5 {
-  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
   color: #ffffff;
   letter-spacing: 2px;
   margin-bottom: 10px;
@@ -439,10 +440,10 @@ ul.topnav li.icon {
       text-align: center; } }
 
 #offices ul li {
-  font-weight: 300;
-  color: #9B9B9B;
+  font-size: 18px;
   line-height: 28px;
-  font-size: 18px; }
+  font-weight: 300;
+  color: #9B9B9B; }
   @media (max-width: 480px) {
     #offices ul li {
       font-size: 9px;
@@ -490,6 +491,7 @@ ul.topnav li.icon {
   @media (max-width: 480px) {
     .primary-footer p {
       font-size: 6px;
+      line-height: 10px;
       float: none;
       text-align: center;
       padding-bottom: 20px; } }

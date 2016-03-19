@@ -3,14 +3,13 @@
 }
 
 #jobs p {
+  @include size-height($font-size-larger-paragraph, 50px);
   font-weight: $font-weight-light;
-  font-size: $font-size-larger-paragraph;
-  line-height: 50px;
   color:$color-darkGrey;
   text-align: center;
   @include media("(max-width: 480px)"){
-    font-size: 11px;
-    line-height: 18px;
+    @include size-height(11px, 18px);
+
   }
 
 }
@@ -27,14 +26,11 @@
   text-align: left;
 }
 #jobs .job-offer p {
-
-  font-size: $font-size-large;
+  @include size-height($font-size-large, 34px);
   color: $color-grey;
-  line-height: 34px;
   text-align: left;
   @include media("(max-width: 480px)"){
-    font-size: 8px;
-    line-height: 13px;
+    @include size-height(8px, 13px);
   }
 
 }
@@ -49,7 +45,7 @@
   @include media("(max-width: 480px)"){
     border:none;
     padding: 0;
-    font-size: 7px;
+    @include size-height(7px, 11px);
   }
 }
 .job-offer-dark {
@@ -90,6 +86,6 @@ display: none;
 #button-load-more .btn {
   @include media("(max-width: 480px)") {
     width: 70%;
-    font-size: 7px;
+    @include size-height(7px, 11px);
   }
 }

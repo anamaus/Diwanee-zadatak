@@ -1,6 +1,5 @@
 
 body {
-
   font:{
     family:$font-family-text;
     size:$font-size-small;
@@ -28,59 +27,47 @@ h1, h2, h3, h4, h5, h6 {
 
 
 h1{
-  font:{
-    size: $font-size-h1;
-    weight: $font-weight-semiBold;
-  }
-  line-height: 75px;
+  @include size-height($font-size-xxx-large, 75px);
   @include media("(max-width: 480px)"){
-    font-size:30px;
-    line-height: 49px;
+    @include size-height(30px, 49px);
   }
   }
 
 h2{
-  font-size:$font-size-xx-large;
+  @include size-height($font-size-xx-large, 75px);
   letter-spacing: 3px;
-  line-height: 75px;
   @include media("(max-width: 480px)"){
-    font-size: 20px;
-    line-height: 32px;
+    @include size-height(20px, 32px);
   }
 
 }
 h3{
-  font-size: $font-size-x-large;
+  @include size-height($font-size-x-large, 36px);
   letter-spacing: 2.33px;
-  line-height: 36px;
-
   @include media("(max-width: 480px)"){
-    font-size: 8px;
-    line-height: 13px;
+    @include size-height(8px, 13px);
   }
 }
 h4{
-  font-size:$font-size-large;
-  letter-spacing: 3px;
-  line-height: 75px;
+  @include size-height($font-size-large, 30px);
+  letter-spacing: 4px;
   @include media("(max-width: 480px)"){
-  font-size: $font-size-xx-small;
-    line-height: 19px;
+    @include size-height($font-size-xx-small, 19px);
   }
 }
 h5{
   font-size: $font-size-h5;
   @include media("(max-width: 480px)"){
-    font-size: 9px;
-    line-height: 15px;
+    @include size-height(9px, 15px);
   }
 }
 h6{
+  @include size-height($font-size-small, $line-height-body);
   color: $color-grey;
-  font-weight: 300;
+  font-weight: $font-weight-light;
   margin-bottom: 50px;
   @include media("(max-width: 480px)"){
-    font-size: 9px;
+     @include size-height(9px, 15px);
   }
 
 }

@@ -16,7 +16,7 @@ $font-family-text: 'Source Sans Pro', sans-serif;
 $font-weight-normal: 400;
 $font-weight-light: 300;
 $font-weight-semiBold: 600;
-
+$line-height:75px;
 
 $font-size-xx-small: 12px;
 $font-size-x-small: 13px;
@@ -26,11 +26,16 @@ $font-size-large: 24px;
 $font-size-x-large: 28px;
 $font-size-xx-large: 60px;
 $font-size-xxx-large: 120px;
+
+$font-size-body: $font-size-small;
 $font-size-large-paragraph:30px;
 $heading-paragraph-margin-bottom:22px;
 $line-height-body:26px;
 $letter-spacing-body:1px;
 $font-size-larger-paragraph:36px;
+
+
+
 $font-size-h1:$font-size-xxx-large;
 $font-size-h5:$font-size-regular;
 
