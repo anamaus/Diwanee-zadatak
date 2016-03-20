@@ -74,6 +74,11 @@ ul.topnav li a, ul.topnav .followus-link {
   ul.topnav li a:hover, ul.topnav .followus-link:hover {
     color: #C41230; }
 
+.service-box1, .service-box2, .service-box3 {
+  text-align: center;
+  padding: 80px 50px;
+  background-color: #fbfbfb; }
+
 body {
   font-size: 16px;
   line-height: 26px;
@@ -184,7 +189,7 @@ h6 {
   margin: 50px auto; }
 
 .dash-muted {
-  background: #888888;
+  background: #bbbbbb;
   width: 50px;
   height: 2px;
   margin: 30px auto; }
@@ -291,11 +296,6 @@ ul.topnav li.icon {
     background-color: transparent;
     border-bottom: none;
     margin-bottom: 20px; } }
-
-.service-box {
-  text-align: center;
-  padding: 80px 50px;
-  background-color: #fbfbfb; }
 
 .service-box1 {
   background-repeat: no-repeat;

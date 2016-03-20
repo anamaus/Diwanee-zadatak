@@ -1,11 +1,7 @@
 
-.service-box {
-  text-align: center;
-  padding: 80px 50px;
-  background-color:$color-alabasterGrey;
-}
-.service-box1{
 
+.service-box1{
+@extend %service-box;
   background-repeat: no-repeat;
   background-image: url("../images/triangle-white.png") ;
   background-position: right 480px bottom 40px;
@@ -14,15 +10,18 @@
 }
 
 .service-box2{
+  @extend %service-box;
   background-color: $color-lightGrey;
 }
 
 .service-box3 {
+  @extend %service-box;
   background-image: url("../images/square-white.png");
   background-repeat: no-repeat;
   background-position: right -100px bottom -100px;
   @include prefix(background-size, 70% auto, webkit moz o);
 }
+
 .service-box img {
   margin-bottom: 30px;
   max-height: 90px;
