@@ -3,10 +3,9 @@
   p {
     @include size-height($font-size-x-larger, 50px);
     font-weight: $font-weight-light;
-    color:$color-primary-text;
+    color: $color-primary-text;
     text-align: center;
-    margin-bottom: 50px;
-    @include media("(max-width: 480px)"){
+    @include media("(max-width: 480px)") {
       @include size-height($font-size-mobile-regular, 18px);
 
     }
@@ -19,27 +18,27 @@
       padding: 30px 0;
       background-color: $color-alabasterGrey;
     }
-    h3{
+    h3 {
       text-align: left;
     }
     p {
       @include size-height($font-size-large, 34px);
       color: $color-grey;
       text-align: left;
-      @include media("(max-width: 480px)"){
+      @include media("(max-width: 480px)") {
         @include size-height($font-size-mobile-x-small, 13px);
       }
 
     }
-    ul li{
+    ul li {
       display: inline-block;
       border: 1px solid $color-grey;
       padding: 7px 14px;
       color: $color-accent;
       letter-spacing: 2px;
       margin-right: 5px;
-      @include media("(max-width: 480px)"){
-        border:none;
+      @include media("(max-width: 480px)") {
+        border: none;
         padding: 0;
         @include size-height($font-size-mobile-xx-small, 11px);
       }
@@ -47,38 +46,33 @@
   }
   .job-offer-dark {
     background-color: $color-blackGrey;
-
-    @include media("(max-width: 480px)"){
-      background-color:$color-white;
+    @include media("(max-width: 480px)") {
+      background-color: $color-white;
     }
-    h3{
-       color: $color-white;
-      @include media("(max-width: 480px)"){
-      color:$color-primary-text;
-     }
-    }
-    ul li{
+    h3 {
       color: $color-white;
-      @include media("(max-width: 480px)"){
+      @include media("(max-width: 480px)") {
+        color: $color-primary-text;
+      }
+    }
+    ul li {
+      color: $color-white;
+      @include media("(max-width: 480px)") {
         color: $color-accent;
       }
-
     }
-
   }
-
 }
-
 
 .sign-in-job-button {
   text-align: center;
   padding: 25% 0;
-  @include media("(max-width: 480px)"){
-display: none;
+  @include media("(max-width: 480px)") {
+    display: none;
   }
 }
 
-#button-load-more{
+#button-load-more {
   text-align: center;
   margin-top: 50px;
   .btn {
@@ -87,4 +81,4 @@ display: none;
       @include size-height($font-size-mobile-xx-small, 11px);
     }
   }
- }
+}

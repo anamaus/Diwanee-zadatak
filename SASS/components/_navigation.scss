@@ -8,48 +8,43 @@ ul.topnav {
   @extend %clearfix;
   background-color: transparent;
   text-align: right;
-}
-
-ul.topnav li {
-  display: inline-block;
-}
-
-//style navbar links
-ul.topnav li a {
-  @extend %navbar-links;
-}
-
-// Style 'follow us' list item in navbar. Hide on desktop, show on small.
-ul.topnav .followus-link {
-  @extend %navbar-links;
-  display: none;
-  @include media("(max-width: 480px)") {
-    display: block;
-    background-color: $color-blackGrey;
-    color: $color-white;
-    border-bottom: 1px solid $color-grey;
-  }
-  p {
-    @include size-height($font-size-mobile-x-small, 20px);
-    text-align: left;
-    margin-bottom: $margin-bottom-none;
-    color: $color-grey;
-    margin-left: 10px;
-
-  }
-  .social-links-right {
-    text-align: right;
-    display: inline;
+  li {
+    display: inline-block;
     a {
-      display: inline;
-      padding: 0;
-      border-bottom: none;
-      float: right;
-      margin-right: 20px;
-      font-size: $font-size-large;
-      color: $color-grey;
+      @extend %navbar-links;
     }
+    .followus-link {
+      @extend %navbar-links;
+      display: none;
+      @include media("(max-width: 480px)") {
+        display: block;
+        background-color: $color-blackGrey;
+        color: $color-white;
+        border-bottom: 1px solid $color-grey;
+      }
+      p {
+        @include size-height($font-size-mobile-x-small, 20px);
+        text-align: left;
+        margin-bottom: $margin-bottom-none;
+        color: $color-grey;
+        margin-left: 10px;
 
+      }
+      .social-links-right {
+        text-align: right;
+        display: inline;
+        a {
+          display: inline;
+          padding: 0;
+          border-bottom: none;
+          float: right;
+          margin-right: 20px;
+          font-size: $font-size-large;
+          color: $color-grey;
+        }
+
+      }
+    }
   }
 }
 
@@ -62,7 +57,6 @@ ul.topnav li:not(:first-child) {
 
 // Hide the list item that contains the link that should open and close the topnav on small screens
 //show and style icon on small screen
-
 ul.topnav li.icon {
   display: none;
   @include media("(max-width: 480px)") {
@@ -77,30 +71,23 @@ ul.topnav li.icon {
   }
 }
 
-
-
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon.  */
-
+//style navbar links for small screens
 ul.topnav.responsive li {
   @include media("(max-width: 480px)") {
     display: inline;
   }
-}
-
-//style navbar links for small screens
-
-ul.topnav.responsive li a {
-  @include media("(max-width: 480px)") {
-    display: block;
-    background-color: $color-blackGrey;
-    color: $color-white;
-    border-bottom: 1px solid $color-grey;
+  a {
+    @include media("(max-width: 480px)") {
+      display: block;
+      background-color: $color-blackGrey;
+      color: $color-white;
+      border-bottom: 1px solid $color-grey;
+    }
   }
 }
 
-
 //style for hamburger icon - transparent bg
-
 ul.topnav.responsive .icon a {
   @include media("(max-width: 480px)") {
     background-color: transparent;

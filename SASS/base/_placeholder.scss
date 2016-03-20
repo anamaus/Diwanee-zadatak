@@ -16,7 +16,6 @@
 }
 
 %bg-image {
-
   @include prefix(background-size, cover, webkit moz o);
   background: no-repeat center center;
   width: 100%;
@@ -38,12 +37,19 @@
   }
 }
 //section-services
-%service-box{
+%service-box {
   text-align: center;
   padding: 80px 50px;
-  background-color:$color-alabasterGrey;
+  background-color: $color-alabasterGrey;
+  @include media("(max-width: 480px)") {
+    padding: 30px 20px;
+  }
+  img {
+    margin-bottom: 30px;
+    max-height: 90px;
+  }
 }
-
+//footer text style
 %footer-typo{
   font-weight: $font-weight-light;
   font-size: $font-size-xxx-small;

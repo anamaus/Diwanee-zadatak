@@ -1,15 +1,13 @@
 
-
-.service-box1{
-@extend %service-box;
+.service-box1 {
+  @extend %service-box;
   background-repeat: no-repeat;
-  background-image: url("../images/triangle-white.png") ;
+  background-image: url("../images/triangle-white.png");
   background-position: right 480px bottom 40px;
-  @include prefix(background-size,80% 80%, webkit moz o);
-
+  @include prefix(background-size, 80% 80%, webkit moz o);
 }
 
-.service-box2{
+.service-box2 {
   @extend %service-box;
   background-color: $color-lightGrey;
 }
@@ -22,13 +20,10 @@
   @include prefix(background-size, 70% auto, webkit moz o);
 }
 
-.service-box img {
-  margin-bottom: 30px;
-  max-height: 90px;
 
-}
 
-.service-box1, .service-box3 {
+.service-box1,
+.service-box3 {
   @include media("(max-width: 480px)") {
     background-image: none;
   }
