@@ -22,7 +22,7 @@
   width: 100%;
 }
 
-
+//navigation bar
 %navbar-links{
   display: inline-block;
   font-size: $font-size-xx-small;
@@ -37,9 +37,16 @@
     color: $color-accent;
   }
 }
-
+//section-services
 %service-box{
   text-align: center;
   padding: 80px 50px;
   background-color:$color-alabasterGrey;
+}
+
+%footer-typo{
+  font-weight: $font-weight-light;
+  font-size: $font-size-xxx-small;
+  color: $color-scorpionGrey;
+  letter-spacing: 2px;
 }

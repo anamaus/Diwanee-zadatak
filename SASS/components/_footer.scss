@@ -6,44 +6,44 @@
     background-color: $color-darkGrey;
     padding: 0;
   }
+  p{
+    @extend %footer-typo;
+    float: left;
+    margin-bottom: $margin-bottom-none;
+    @include media("(max-width: 480px)") {
+      @include size-height($font-size-mobile-xxx-small, 10px);
+      float: none;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+  }
+  #links {
+    float: right;
+     @include media("(max-width: 480px)"){
+       float: none;
+       background-color: $color-blackGrey;
+       margin-bottom: 20px;
+       padding: 20px 0;
+       text-align: center;
+     }
+    a{
+      @extend %footer-typo;
+    }
+    .fa {
+
+      font-size: $font-size-small;
+      margin-right: 20px;
+    }
+   }
+
 }
 .primary-footer .container{
   @include media("(max-width: 480px)") {
     padding: 0;
   }
 }
-.primary-footer p{
-  float: left;
-  margin-bottom: $margin-bottom-none;
-  @include media("(max-width: 480px)") {
-    @include size-height($font-size-mobile-xxx-small, 10px);
-    float: none;
-    text-align: center;
-    padding-bottom: 20px;
-  }
-}
-#links {
-  float: right;
-  @include media("(max-width: 480px)"){
-    float: none;
-    background-color: $color-blackGrey;
-    margin-bottom: 20px;
-    padding: 20px 0;
-    text-align: center;
-  }
-}
 
 
 
-.primary-footer p, #links a {
-  font-weight: $font-weight-light;
-  font-size: $font-size-xxx-small;
-  color: $color-scorpionGrey;
-  letter-spacing: 2px;
-}
 
-#links .fa {
 
-   font-size: $font-size-small;
-   margin-right: 20px;
- }
