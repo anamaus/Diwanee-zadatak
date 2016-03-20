@@ -1,10 +1,10 @@
 #contact {
   text-align: center;
+  img:first-of-type{
+    margin-right: 5px;
+  }
+  img:last-of-type{
+    margin-left: 5px;
+  }
+}
 
-}
-#contact img:first-of-type{
-  margin-right: 5px;
-}
-#contact img:last-of-type{
-  margin-left: 5px;
-}
