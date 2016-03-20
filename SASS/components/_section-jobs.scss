@@ -1,73 +1,72 @@
-#jobs, .job-offer{
+#jobs {
   @extend %clearfix;
-}
-
-#jobs p {
-  @include size-height($font-size-x-larger, 50px);
-  font-weight: $font-weight-light;
-  color:$color-primary-text;
-  text-align: center;
-  margin-bottom: 50px;
-  @include media("(max-width: 480px)"){
-    @include size-height($font-size-mobile-regular, 18px);
-
-  }
-
-}
-
-.job-offer {
-  padding: 80px 0;
-  @include media("(max-width: 480px)"){
-    padding: 30px 0;
-    background-color:$color-alabasterGrey;
-  }
-
-}
-#jobs .job-offer h3{
-  text-align: left;
-}
-#jobs .job-offer p {
-  @include size-height($font-size-large, 34px);
-  color: $color-grey;
-  text-align: left;
-  @include media("(max-width: 480px)"){
-    @include size-height($font-size-mobile-x-small, 13px);
-  }
-
-}
-
-.job-offer ul li{
-  display: inline-block;
-  border: 1px solid $color-grey;
-  padding: 7px 14px;
-  color: $color-accent;
-  letter-spacing: 2px;
-  margin-right: 5px;
-  @include media("(max-width: 480px)"){
-    border:none;
-    padding: 0;
-    @include size-height($font-size-mobile-xx-small, 11px);
-  }
-}
-.job-offer-dark {
-  background-color: $color-blackGrey;
-  @include media("(max-width: 480px)"){
-    background-color:$color-white;
-  }
-
-}
-.job-offer-dark ul li{
-   color: $color-white;
-  @include media("(max-width: 480px)"){
-    color: $color-accent;
-  }
-
- }
-.job-offer-dark , .job-offer-dark h3, .job-offer-dark a{
-  color: $color-white;
-  @include media("(max-width: 480px)"){
+  p {
+    @include size-height($font-size-x-larger, 50px);
+    font-weight: $font-weight-light;
     color:$color-primary-text;
+    text-align: center;
+    margin-bottom: 50px;
+    @include media("(max-width: 480px)"){
+      @include size-height($font-size-mobile-regular, 18px);
+
+    }
+
   }
+  .job-offer {
+    @extend %clearfix;
+    padding: 80px 0;
+    @include media("(max-width: 480px)") {
+      padding: 30px 0;
+      background-color: $color-alabasterGrey;
+    }
+    h3{
+      text-align: left;
+    }
+    p {
+      @include size-height($font-size-large, 34px);
+      color: $color-grey;
+      text-align: left;
+      @include media("(max-width: 480px)"){
+        @include size-height($font-size-mobile-x-small, 13px);
+      }
+
+    }
+    ul li{
+      display: inline-block;
+      border: 1px solid $color-grey;
+      padding: 7px 14px;
+      color: $color-accent;
+      letter-spacing: 2px;
+      margin-right: 5px;
+      @include media("(max-width: 480px)"){
+        border:none;
+        padding: 0;
+        @include size-height($font-size-mobile-xx-small, 11px);
+      }
+    }
+  }
+  .job-offer-dark {
+    background-color: $color-blackGrey;
+
+    @include media("(max-width: 480px)"){
+      background-color:$color-white;
+    }
+    h3{
+       color: $color-white;
+      @include media("(max-width: 480px)"){
+      color:$color-primary-text;
+     }
+    }
+    ul li{
+      color: $color-white;
+      @include media("(max-width: 480px)"){
+        color: $color-accent;
+      }
+
+    }
+
+  }
+
 }
 
 
@@ -82,11 +81,10 @@ display: none;
 #button-load-more{
   text-align: center;
   margin-top: 50px;
-
- }
-#button-load-more .btn {
-  @include media("(max-width: 480px)") {
-    width: 70%;
-    @include size-height($font-size-mobile-xx-small, 11px);
+  .btn {
+    @include media("(max-width: 480px)") {
+      width: 70%;
+      @include size-height($font-size-mobile-xx-small, 11px);
+    }
   }
-}
+ }

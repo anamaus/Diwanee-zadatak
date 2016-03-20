@@ -15,6 +15,7 @@
     text-align: center;
   }
 }
+
 #offices ul li {
   @include size-height($font-size-small, 28px);
   font-weight:$font-weight-light;
@@ -24,6 +25,7 @@
     text-align: center;
   }
 }
+
 #offices p {
   margin-bottom: $margin-bottom-none;
 }

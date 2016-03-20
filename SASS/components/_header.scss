@@ -1,24 +1,26 @@
-header{
+header {
   @extend %bg-image;
   background-image: url("../images/diwanee-cover.png");
   height: 100vh;
-   }
+  #main-text {
+    @extend %center-horizontal;
+    text-align: center;
+    p {
+      @include size-height($font-size-x-large, 40px);
+      color: $color-primary-text;
+      @include media("(max-width: 480px)") {
+        @include size-height($font-size-small, 29px);
+      }
+    }
 
-#main-text{
-  @extend %center-horizontal;
-  text-align: center;
-  p{
-    @include size-height( $font-size-x-large, 40px);
-    color: $color-primary-text;
-    @include media("(max-width: 480px)"){
-      @include size-height($font-size-small, 29px);
+  }
+  .logo {
+    margin-top: 20px;
+    @include media("(max-width: 480px)") {
+      margin-left: 16px;
     }
   }
-
 }
 
-.logo {
-  margin-top: 20px;
-  @include media("(max-width: 480px)"){
-    margin-left: 16px;}
-}
+
+

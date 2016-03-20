@@ -38,16 +38,16 @@ table {
 a, a:hover {
   text-decoration: none; }
 
-ul.topnav, #jobs, .job-offer, #offices-footer, .primary-footer {
+ul.topnav, #jobs, #jobs .job-offer, #offices-footer, .primary-footer {
   *zoom: 1;
   clear: both; }
-  ul.topnav:before, #jobs:before, .job-offer:before, #offices-footer:before, .primary-footer:before, ul.topnav:after, #jobs:after, .job-offer:after, #offices-footer:after, .primary-footer:after {
+  ul.topnav:before, #jobs:before, #jobs .job-offer:before, #offices-footer:before, .primary-footer:before, ul.topnav:after, #jobs:after, #jobs .job-offer:after, #offices-footer:after, .primary-footer:after {
     content: " ";
     display: table; }
-  ul.topnav:after, #jobs:after, .job-offer:after, #offices-footer:after, .primary-footer:after {
+  ul.topnav:after, #jobs:after, #jobs .job-offer:after, #offices-footer:after, .primary-footer:after {
     clear: both; }
 
-#main-text {
+header #main-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -197,23 +197,21 @@ h6 {
 header {
   background-image: url("../images/diwanee-cover.png");
   height: 100vh; }
-
-#main-text {
-  text-align: center; }
-  #main-text p {
-    font-size: 30px;
-    line-height: 40px;
-    color: #333333; }
+  header #main-text {
+    text-align: center; }
+    header #main-text p {
+      font-size: 30px;
+      line-height: 40px;
+      color: #333333; }
+      @media (max-width: 480px) {
+        header #main-text p {
+          font-size: 18px;
+          line-height: 29px; } }
+  header .logo {
+    margin-top: 20px; }
     @media (max-width: 480px) {
-      #main-text p {
-        font-size: 18px;
-        line-height: 29px; } }
-
-.logo {
-  margin-top: 20px; }
-  @media (max-width: 480px) {
-    .logo {
-      margin-left: 16px; } }
+      header .logo {
+        margin-left: 16px; } }
 
 .nav {
   position: relative;
@@ -339,58 +337,51 @@ ul.topnav li.icon {
     #jobs p {
       font-size: 11px;
       line-height: 18px; } }
-
-.job-offer {
+#jobs .job-offer {
   padding: 80px 0; }
   @media (max-width: 480px) {
-    .job-offer {
+    #jobs .job-offer {
       padding: 30px 0;
       background-color: #fbfbfb; } }
-
-#jobs .job-offer h3 {
-  text-align: left; }
-
-#jobs .job-offer p {
-  font-size: 24px;
-  line-height: 34px;
-  color: #888888;
-  text-align: left; }
-  @media (max-width: 480px) {
-    #jobs .job-offer p {
-      font-size: 8px;
-      line-height: 13px; } }
-
-.job-offer ul li {
-  display: inline-block;
-  border: 1px solid #888888;
-  padding: 7px 14px;
-  color: #C41230;
-  letter-spacing: 2px;
-  margin-right: 5px; }
-  @media (max-width: 480px) {
-    .job-offer ul li {
-      border: none;
-      padding: 0;
-      font-size: 7px;
-      line-height: 11px; } }
-
-.job-offer-dark {
+  #jobs .job-offer h3 {
+    text-align: left; }
+  #jobs .job-offer p {
+    font-size: 24px;
+    line-height: 34px;
+    color: #888888;
+    text-align: left; }
+    @media (max-width: 480px) {
+      #jobs .job-offer p {
+        font-size: 8px;
+        line-height: 13px; } }
+  #jobs .job-offer ul li {
+    display: inline-block;
+    border: 1px solid #888888;
+    padding: 7px 14px;
+    color: #C41230;
+    letter-spacing: 2px;
+    margin-right: 5px; }
+    @media (max-width: 480px) {
+      #jobs .job-offer ul li {
+        border: none;
+        padding: 0;
+        font-size: 7px;
+        line-height: 11px; } }
+#jobs .job-offer-dark {
   background-color: #2D2D2D; }
   @media (max-width: 480px) {
-    .job-offer-dark {
+    #jobs .job-offer-dark {
       background-color: #ffffff; } }
-
-.job-offer-dark ul li {
-  color: #ffffff; }
-  @media (max-width: 480px) {
-    .job-offer-dark ul li {
-      color: #C41230; } }
-
-.job-offer-dark, .job-offer-dark h3, .job-offer-dark a {
-  color: #ffffff; }
-  @media (max-width: 480px) {
-    .job-offer-dark, .job-offer-dark h3, .job-offer-dark a {
-      color: #333333; } }
+  #jobs .job-offer-dark h3 {
+    color: #ffffff; }
+    @media (max-width: 480px) {
+      #jobs .job-offer-dark h3 {
+        color: #333333; } }
+  #jobs .job-offer-dark ul li {
+    color: #ffffff; }
+    @media (max-width: 480px) {
+      #jobs .job-offer-dark ul li {
+        color: #C41230; } }
 
 .sign-in-job-button {
   text-align: center;
@@ -402,12 +393,11 @@ ul.topnav li.icon {
 #button-load-more {
   text-align: center;
   margin-top: 50px; }
-
-@media (max-width: 480px) {
-  #button-load-more .btn, #button-load-more .btn-dark {
-    width: 70%;
-    font-size: 7px;
-    line-height: 11px; } }
+  @media (max-width: 480px) {
+    #button-load-more .btn, #button-load-more .btn-dark {
+      width: 70%;
+      font-size: 7px;
+      line-height: 11px; } }
 
 #about {
   background-color: #fbfbfb; }
@@ -480,8 +470,9 @@ ul.topnav li.icon {
       background-color: #333333;
       padding: 0; } }
 
-.primary-footer .container, .primary-footer .container-narrow {
-  padding: 0; }
+@media (max-width: 480px) {
+  .primary-footer .container, .primary-footer .container-narrow {
+    padding: 0; } }
 
 .primary-footer p {
   float: left;

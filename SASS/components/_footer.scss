@@ -8,7 +8,9 @@
   }
 }
 .primary-footer .container{
-  padding: 0;
+  @include media("(max-width: 480px)") {
+    padding: 0;
+  }
 }
 .primary-footer p{
   float: left;
